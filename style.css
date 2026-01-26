@@ -1,14 +1,23 @@
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+/* SAFE RESET */
+* {
+  box-sizing: border-box;
 }
 
-.gallery img {
-  width: 100%;
-  max-width: 320px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+body {
+  background-color: #f4f4f4;
+  color: #111;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  background: #ffffff;
+  color: #111;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 6px;
+}
+
+h1, h2, h3, p, li {
+  color: #111;
 }
