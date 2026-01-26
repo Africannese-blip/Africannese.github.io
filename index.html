@@ -1,116 +1,41 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Africannese Steelworks & Construction</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Africannese Logo">
-  <h1>Africannese Steelworks & Construction</h1>
-  <p>Changing strong ideas into strong structures</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#projects">Projects</a>
-  <a href="#testimonials">Testimonials</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>About Us</h2>
+<section>
+  <h1>Our On-Site & Workshop Projects</h1>
   <p>
-    Africannese Steelworks & Construction is a trusted name in steel fabrication,
-    welding repairs, container converting, painting, steel erecting, and general
-    construction. With over 15 years of hands-on experience, we deliver durable,
-    safe, and cost-effective solutions for industrial, commercial, and private clients.
+    A showcase of our steel erecting, fabrication, and construction work
+    carried out on site and in our workshop.
   </p>
-  <p>
-    Our mission is simple: turn strong ideas into strong, long-lasting structures
-    through quality workmanship, professionalism, and attention to detail.
-  </p>
-</section>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li><strong>Steel Fabrication:</strong> Custom steel structures designed and fabricated to meet industrial and commercial standards.</li>
-    <li><strong>Welding Repairs:</strong> Reliable on-site and workshop welding repairs for machinery, structures, and equipment.</li>
-    <li><strong>Container Converting:</strong> Conversion of shipping containers into offices, storage units, workshops, and accommodation.</li>
-    <li><strong>Painting:</strong> Industrial and commercial painting for corrosion protection and professional finishes.</li>
-    <li><strong>Steel Erecting:</strong> Safe and precise erection of steel structures, warehouses, and frameworks.</li>
-    <li><strong>Construction:</strong> General construction services including structural installation and project support.</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Past Projects</h2>
-
-  <div class="project">
-    <img src="https://images.unsplash.com/photo-1581091870627-3a82b9d3b1c4" alt="Steel Fabrication Project">
-    <p><strong>Steel Fabrication:</strong> Fabrication and installation of industrial steel frameworks.</p>
+  <h2>Steel Erecting – On Site</h2>
+  <div class="gallery">
+    <img src="erecting1.jpg" alt="Steel erecting on site">
+    <img src="erecting2.jpg" alt="Workers erecting steel structure">
+    <img src="erecting3.jpg" alt="Structural steel installation">
   </div>
 
-  <div class="project">
-    <img src="https://images.unsplash.com/photo-1590496793929-36417d3117c9" alt="Container Conversion">
-    <p><strong>Container Conversion:</strong> Conversion of shipping containers into functional office spaces.</p>
+  <h2>Steel Fabrication – Workshop</h2>
+  <div class="gallery">
+    <img src="fabrication1.jpg" alt="Steel fabrication workshop">
+    <img src="fabrication2.jpg" alt="Workers welding steel">
+    <img src="fabrication3.jpg" alt="Steel fabrication process">
   </div>
 
-  <div class="project">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Steel Erection">
-    <p><strong>Steel Erecting:</strong> Erection of large steel structures with safety and precision.</p>
-  </div>
 </section>
-
-<section id="testimonials">
-  <h2>What Our Clients Say</h2>
-
-  <blockquote>
-    “Africannese Steelworks delivered excellent steel fabrication work.
-    The quality and professionalism were outstanding.”
-    <br><strong>— Glen Smith</strong>
-  </blockquote>
-
-  <blockquote>
-    “Reliable, skilled, and committed to the job.
-    I highly recommend Africannese for welding and construction projects.”
-    <br><strong>— Jannie</strong>
-  </blockquote>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>📞 071 244 7847</p>
-  <p>📧 ntulim28@gmail.com</p>
-</section>
-
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/27712447847" class="whatsapp-float" target="_blank">💬</a>
-
-<script>
-let lastScrollTop = 0;
-const whatsappButton = document.querySelector('.whatsapp-float');
-
-window.addEventListener('scroll', function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    whatsappButton.classList.add('hide');
-  } else {
-    whatsappButton.classList.remove('hide');
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
-</script>
-
-<footer>
-  <p>© 2026 Africannese Steelworks & Construction</p>
-</footer>
 
 </body>
 </html>
