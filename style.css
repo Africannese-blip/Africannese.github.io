@@ -1,3 +1,4 @@
+Copy code
 /* ===== GLOBAL RESET ===== */
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f4f4f4;
   color: #111;
   line-height: 1.6;
 }
@@ -79,6 +80,23 @@ section ul {
 
 section li {
   margin-bottom: 10px;
+}
+
+/* ===== PROJECTS PREVIEW ===== */
+.projects-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.projects-preview img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* ===== TESTIMONIALS ===== */
