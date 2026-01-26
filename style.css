@@ -64,6 +64,25 @@ section h2 {
   color: #000000;
 }
 
+/* ===== Projects Section ===== */
+.project {
+  margin-bottom: 15px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* ===== Testimonials Section ===== */
+blockquote {
+  background-color: #f0f0f0;
+  border-left: 5px solid #f9c400;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
 /* ===== Footer ===== */
 footer {
   background-color: black;
@@ -99,5 +118,4 @@ footer {
 /* ===== Scroll Slide Effect ===== */
 .whatsapp-float.hide {
   transform: translateY(100px);
-  opacity: 0;
-}
+  opaci
