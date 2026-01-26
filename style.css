@@ -1,23 +1,22 @@
-/* SAFE RESET */
-* {
-  box-sizing: border-box;
+
+header {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-body {
-  background-color: #f4f4f4;
-  color: #111;
-  margin: 0;
-  font-family: Arial, sans-serif;
+nav a {
+  color: #f5c400; /* gold/yellow but visible */
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-section {
-  background: #ffffff;
-  color: #111;
-  padding: 30px;
-  margin: 20px;
-  border-radius: 6px;
-}
-
-h1, h2, h3, p, li {
-  color: #111;
+.hero {
+  background: #222;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
 }
