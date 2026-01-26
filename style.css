@@ -1,22 +1,120 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
 header {
-  background: #111;
+  background-color: #111;
   padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo {
+  height: 55px;
+}
+
 nav a {
-  color: #f5c400; /* gold/yellow but visible */
-  margin: 0 12px;
+  color: #f5c400;
+  margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HERO ===== */
 .hero {
-  background: #222;
+  background-color: #222;
   color: #ffffff;
-  padding: 60px 20px;
   text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #f5c400;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  background-color: #ffffff;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+section ul {
+  margin-left: 20px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* ===== TESTIMONIALS ===== */
+blockquote {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #f5c400;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
 }
