@@ -18,27 +18,47 @@
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#testimonials">Testimonials</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
   <h2>About Us</h2>
   <p>
-    Africannese Steelworks & Construction provides professional welding repairs,
-    steel fabrication, container converting, painting, and general construction services.
-    We focus on strength, safety, and long-lasting solutions.
+    Africannese Steelworks & Construction has over 15 years of experience delivering high-quality steel fabrication, welding repairs, container converting, painting, steel erecting, and general construction services across Southern Africa. 
+    We specialize in turning strong ideas into strong structures, providing durable solutions tailored to each client’s needs. Our team is professional, safety-conscious, and committed to excellence on every project.
   </p>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
   <ul>
-    <li>Steel Fabrication</li>
-    <li>Welding Repairs</li>
-    <li>Container Converting</li>
-    <li>Painting</li>
-    <li>Construction</li>
+    <li><strong>Steel Fabrication:</strong> We design and fabricate steel structures for industrial and commercial projects, ensuring durability and precision.</li>
+    <li><strong>Welding Repairs:</strong> Professional welding repairs for machinery, structures, and equipment, using high-quality materials and techniques.</li>
+    <li><strong>Container Converting:</strong> Transform shipping containers into offices, homes, storage units, or specialized industrial spaces.</li>
+    <li><strong>Painting:</strong> Industrial and commercial painting services with long-lasting finishes and corrosion protection.</li>
+    <li><strong>Construction:</strong> General construction services including structural installation, steel erection, and site management.</li>
+    <li><strong>Steel Erecting:</strong> Expert steel erection services for warehouses, factories, and large structures, ensuring safety, precision, and timely completion.</li>
   </ul>
+</section>
+
+<section id="projects">
+  <h2>Our Projects</h2>
+  <div class="project">
+    <img src="project1.jpg" alt="Steel Structure Project">
+    <p>Industrial warehouse steel framework completed in 2025.</p>
+  </div>
+  <div class="project">
+    <img src="project2.jpg" alt="Container Conversion Project">
+    <p>Converted shipping containers into fully functional offices.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <blockquote>"Africannese Steelworks delivered our steel structure on time and exceeded our expectations." – Client A</blockquote>
+  <blockquote>"Professional team and excellent workmanship. Highly recommended!" – Client B</blockquote>
 </section>
 
 <section id="contact">
@@ -60,11 +80,9 @@ const whatsappButton = document.querySelector('.whatsapp-float');
 window.addEventListener('scroll', function() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop){
-    // Scrolling down → hide button
-    whatsappButton.classList.add('hide');
+    whatsappButton.classList.add('hide'); // Hide on scroll down
   } else {
-    // Scrolling up → show button
-    whatsappButton.classList.remove('hide');
+    whatsappButton.classList.remove('hide'); // Show on scroll up
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, false);
