@@ -1,3 +1,4 @@
+
 /* =========================
    RESET
 ========================= */
@@ -15,10 +16,16 @@ body {
 }
 
 /* =========================
-   HERO HEADER
+   HERO HEADER – FAKE STEEL
 ========================= */
 .hero {
-  background: linear-gradient(135deg, #111 0%, #222 100%);
+  background: repeating-linear-gradient(
+      45deg,
+      #1a1a1a,
+      #1a1a1a 5px,
+      #222 5px,
+      #222 10px
+  );
   text-align: center;
   padding: 30px 20px 35px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.35);
@@ -30,7 +37,9 @@ body {
   max-width: 580px;
   height: auto;
   display: block;
-  margin: 0 auto 8px;
+  margin: -10px auto 8px; /* Slight lift for premium look */
+  z-index: 2;
+  position: relative;
 }
 
 /* TAGLINE */
