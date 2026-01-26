@@ -1,19 +1,16 @@
-/* ===== Global Styles ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* ===== Header ===== */
 header {
-  background-color: #000000;
-  color: #ffffff;
+  background: #000;
+  color: #fff;
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 header img {
@@ -21,85 +18,63 @@ header img {
   margin-bottom: 15px;
 }
 
-header h1 {
-  margin: 5px 0;
-  font-size: 28px;
-}
-
-header p {
-  font-style: italic;
-  font-size: 16px;
-}
-
-/* ===== Navigation ===== */
 nav {
-  background-color: #f9c400;
+  background: #f9c400;
   text-align: center;
-  padding: 12px 0;
+  padding: 14px 0;
 }
 
 nav a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
   margin: 0 15px;
-  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
 }
 
-nav a:hover {
-  color: #000080;
-}
-
-/* ===== Sections ===== */
 section {
-  background-color: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-section h2 {
+h2 {
   margin-top: 0;
-  color: #000000;
 }
 
-/* ===== Projects Section ===== */
 .project {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .project img {
-  max-width: 100%;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-/* ===== Testimonials Section ===== */
 blockquote {
-  background-color: #f0f0f0;
-  border-left: 5px solid #f9c400;
-  padding: 10px 15px;
-  margin: 10px 0;
+  background: #f0f0f0;
+  border-left: 6px solid #f9c400;
+  padding: 15px 20px;
+  margin: 20px 0;
   font-style: italic;
 }
 
-/* ===== Footer ===== */
 footer {
-  background-color: black;
-  color: white;
+  background: #000;
+  color: #fff;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 20px;
 }
 
-/* ===== Floating WhatsApp Button ===== */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 9999;
-  background-color: #25D366;
-  color: white;
+  background: #25D366;
+  color: #fff;
   font-size: 26px;
   width: 55px;
   height: 55px;
@@ -107,15 +82,12 @@ footer {
   text-align: center;
   line-height: 55px;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.2s, opacity 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s, opacity 0.3s;
+  z-index: 9999;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-/* ===== Scroll Slide Effect ===== */
 .whatsapp-float.hide {
   transform: translateY(100px);
-  opaci
+  opacity: 0;
+}
