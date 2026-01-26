@@ -1,63 +1,55 @@
-
-/* ===== GLOBAL RESET ===== */
+/* RESET */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f7f7;
   color: #111;
   line-height: 1.7;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   background-color: #111;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .logo {
-  height: 100px; /* big logo */
+  height: 110px;
   margin-bottom: 10px;
 }
 
-/* ===== TAGLINE ===== */
 .tagline {
-  font-size: 16px;
   color: #f5c400;
-  margin-bottom: 20px;
-  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section {
-  background-color: #ffffff;
+  background-color: #fff;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 40px 30px;
-  max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 section h2 {
-  margin-bottom: 20px;
   font-size: 28px;
-  color: #111;
+  margin-bottom: 20px;
 }
 
 section p {
-  margin-bottom: 20px;
   font-size: 16px;
+  margin-bottom: 18px;
   color: #333;
 }
 
@@ -66,55 +58,48 @@ section ul {
 }
 
 section li {
-  margin-bottom: 12px;
   font-size: 16px;
+  margin-bottom: 12px;
 }
 
-/* ===== TESTIMONIALS ===== */
+/* TESTIMONIALS */
 blockquote {
-  background: #f3f3f3;
-  padding: 25px 20px;
-  margin: 25px 0;
+  background-color: #f2f2f2;
+  padding: 25px;
+  margin: 20px 0;
   border-left: 6px solid #f5c400;
   font-style: italic;
-  font-size: 16px;
 }
 
-/* ===== WHATSAPP BUTTON ===== */
+/* WHATSAPP BUTTON */
 .whatsapp {
   position: fixed;
-  bottom: 25px;
   right: 25px;
+  bottom: 25px;
   background-color: #25D366;
   color: white;
-  padding: 18px 25px;
+  padding: 16px 25px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 .whatsapp:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-/* ===== MOBILE ===== */
+/* MOBILE */
 @media (max-width: 768px) {
   .logo {
-    height: 80px;
+    height: 85px;
   }
 
-  .tagline {
-    font-size: 14px;
+  section {
+    padding: 30px 20px;
   }
 
   section h2 {
     font-size: 24px;
-  }
-
-  section p, section li {
-    font-size: 15px;
   }
 }
