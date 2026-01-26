@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +50,24 @@
 <a href="https://wa.me/27712447847" class="whatsapp-float" target="_blank">
   💬
 </a>
+
+<!-- Scroll Slide Effect Script -->
+<script>
+let lastScrollTop = 0;
+const whatsappButton = document.querySelector('.whatsapp-float');
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop){
+    // Scrolling down → hide button
+    whatsappButton.classList.add('hide');
+  } else {
+    // Scrolling up → show button
+    whatsappButton.classList.remove('hide');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false);
+</script>
 
 <footer>
   <p>© 2026 Africannese Steelworks & Construction</p>
