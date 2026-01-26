@@ -8,45 +8,50 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f4f4f4;
   color: #222;
-  line-height: 1.6;
 }
 
 /* =========================
-   HERO HEADER (LOGO DOMINANT)
+   FULL HERO LOGO SECTION
 ========================= */
 .hero {
+  min-height: 100vh;                 /* FULL SCREEN */
   background-color: #111;
-  text-align: center;
-  padding: 50px 20px 55px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;           /* CENTER LOGO VERTICALLY */
+  align-items: center;               /* CENTER LOGO HORIZONTALLY */
+  padding: 30px 20px 40px;
 }
 
-/* LOGO AS HERO IMAGE */
+/* LOGO DOMINATES THE SCREEN */
 .hero-logo {
   width: 100%;
-  max-width: 950px;   /* Controls premium scale */
+  max-width: 1100px;                 /* BIG, BILLBOARD SCALE */
   height: auto;
-  display: block;
-  margin: 0 auto 18px;
+  margin-bottom: 20px;
 }
 
-/* TAGLINE – SUBTLE, NOT A HEADING */
+/* TAGLINE – SUPPORTING ROLE */
 .tagline {
   color: #f5c400;
   font-size: 14px;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 /* =========================
-   SECTIONS – GLOBAL
+   CONTENT SECTIONS
 ========================= */
 section {
-  padding: 65px 20px;
+  padding: 70px 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -54,8 +59,8 @@ section {
 section h2 {
   font-size: 30px;
   margin-bottom: 22px;
-  color: #111;
   text-align: center;
+  color: #111;
 }
 
 section p {
@@ -121,7 +126,7 @@ section p {
 .contact {
   background-color: #111;
   color: #fff;
-  padding: 45px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -132,7 +137,7 @@ section p {
 }
 
 /* =========================
-   WHATSAPP FLOAT BUTTON
+   WHATSAPP FLOAT
 ========================= */
 .whatsapp-float {
   position: fixed;
@@ -162,22 +167,18 @@ footer {
 }
 
 /* =========================
-   MOBILE OPTIMISATION
+   MOBILE
 ========================= */
 @media (max-width: 768px) {
-  .hero {
-    padding: 40px 15px 45px;
-  }
-
   .hero-logo {
     max-width: 100%;
   }
 
-  section h2 {
-    font-size: 24px;
+  .tagline {
+    font-size: 13px;
   }
 
-  section {
-    padding: 45px 18px;
+  section h2 {
+    font-size: 24px;
   }
 }
