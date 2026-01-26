@@ -1,4 +1,3 @@
-Copy code
 /* ===== GLOBAL RESET ===== */
 * {
   box-sizing: border-box;
@@ -7,30 +6,35 @@ Copy code
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
   color: #111;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* ===== HEADER ===== */
 header {
   background-color: #111;
-  padding: 15px 20px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
-  height: 55px;
+  height: 80px;
 }
 
 nav a {
   color: #f5c400;
-  margin-left: 15px;
+  margin-left: 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -40,85 +44,100 @@ nav a:hover {
 /* ===== HERO ===== */
 .hero {
   background-color: #222;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
-  padding: 70px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 16px;
+  font-size: 18px;
   color: #f5c400;
+  letter-spacing: 1px;
 }
 
 /* ===== SECTIONS ===== */
 section {
   background-color: #ffffff;
-  margin: 30px auto;
-  padding: 30px;
-  max-width: 1000px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  padding: 40px 30px;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
+/* Section headings */
 section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 28px;
   color: #111;
 }
 
+/* Paragraphs */
 section p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
 }
 
+/* List styles */
 section ul {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 section li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
 }
 
-/* ===== PROJECTS PREVIEW ===== */
+/* ===== PROJECTS GRID (Ready for images) ===== */
 .projects-preview {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .projects-preview img {
   width: 100%;
-  max-width: 250px;
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background-color: #ddd; /* Placeholder background if image missing */
 }
 
 /* ===== TESTIMONIALS ===== */
 blockquote {
-  background: #f9f9f9;
-  padding: 20px;
-  margin: 20px 0;
-  border-left: 5px solid #f5c400;
+  background: #f3f3f3;
+  padding: 25px 20px;
+  margin: 25px 0;
+  border-left: 6px solid #f5c400;
+  font-style: italic;
+  font-size: 16px;
 }
 
 /* ===== WHATSAPP BUTTON ===== */
 .whatsapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: #25D366;
   color: white;
-  padding: 15px 22px;
+  padding: 18px 25px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 /* ===== MOBILE ===== */
@@ -133,6 +152,10 @@ blockquote {
   }
 
   .hero h1 {
-    font-size: 26px;
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
   }
 }
