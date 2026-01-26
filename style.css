@@ -20,3 +20,8 @@
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+/* Smooth slide effect when scrolling */
+.whatsapp-float.hide {
+  transform: translateY(100px); /* slide down off screen */
+  opacity: 0;
+}
