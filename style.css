@@ -18,7 +18,7 @@ header {
   padding: 20px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Center logo since no nav */
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   position: sticky;
   top: 0;
@@ -26,65 +26,45 @@ header {
 }
 
 .logo {
-  height: 80px;
+  height: 90px;
 }
 
-nav a {
-  color: #f5c400;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ===== HERO ===== */
-.hero {
+/* ===== TAGLINE CARD ===== */
+.tagline-card {
   background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
   color: #f5c400;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  font-size: 28px;
   letter-spacing: 1px;
 }
 
 /* ===== SECTIONS ===== */
 section {
   background-color: #ffffff;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 40px 30px;
-  max-width: 1200px;
+  max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-/* Section headings */
 section h2 {
   margin-bottom: 20px;
   font-size: 28px;
   color: #111;
 }
 
-/* Paragraphs */
 section p {
   margin-bottom: 20px;
   font-size: 16px;
   color: #333;
 }
 
-/* List styles */
 section ul {
   margin-left: 25px;
 }
@@ -92,22 +72,6 @@ section ul {
 section li {
   margin-bottom: 12px;
   font-size: 16px;
-}
-
-/* ===== PROJECTS GRID (Ready for images) ===== */
-.projects-preview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.projects-preview img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  background-color: #ddd; /* Placeholder background if image missing */
 }
 
 /* ===== TESTIMONIALS ===== */
@@ -142,20 +106,20 @@ blockquote {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
+  .tagline-card {
+    font-size: 22px;
+    padding: 40px 20px;
   }
 
-  nav {
-    margin-top: 10px;
+  section h2 {
+    font-size: 24px;
   }
 
-  .hero h1 {
-    font-size: 28px;
+  section p, section li {
+    font-size: 15px;
   }
 
-  .hero p {
-    font-size: 16px;
+  .logo {
+    height: 70px;
   }
 }
