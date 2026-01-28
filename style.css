@@ -1,161 +1,123 @@
 
-/* ----------------------- General ----------------------- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-h1, h2, h3 {
-  color: #000;
-  margin-top: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* ----------------------- Header & Nav ----------------------- */
+/* ===== HEADER / LOGO AREA ===== */
 header {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  padding: 50px 20px 40px;
   text-align: center;
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  position: relative;
 }
 
-header img.hero-logo {
-  max-width: 300px;
+header img {
+  max-width: 260px;
   width: 100%;
-  height: auto;
 }
 
 header .tagline {
-  font-size: 16px;
-  font-style: italic;
+  color: #f5c400;
+  font-size: 14px;
   margin-top: 10px;
-  color: #ffeb3b;
+  letter-spacing: 1px;
+  text-transform: lowercase;
 }
 
+/* ===== NAV ===== */
 nav {
-  background-color: #ffeb3b;
+  background: #f5c400;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 nav ul li a {
+  padding: 14px 20px;
+  display: block;
   font-weight: bold;
   color: #000;
-  padding: 10px 0;
-  display: block;
 }
 
-/* ----------------------- Sections ----------------------- */
+/* ===== SECTIONS ===== */
 section {
-  padding: 50px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  padding: 50px 20px;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 28px;
-  color: #000;
 }
 
-/* Services cards */
-.services, .projects, .testimonials {
+/* ===== CARDS ===== */
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.service-card, .project-card, .testimonial {
-  background-color: #f5f5f5;
-  padding: 20px;
+.card {
+  background: #f4f4f4;
+  padding: 25px;
   width: 300px;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.service-card h3, .project-card h3 {
-  margin-top: 0;
-  color: #000;
+/* ===== TESTIMONIALS ===== */
+.testimonial {
+  font-style: italic;
 }
 
 .testimonial span {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #000;
 }
 
-/* ----------------------- Contact & Call Action ----------------------- */
-.contact p {
-  margin: 10px 0;
-}
-
-.call-action {
-  text-align: center;
-  background-color: #ffeb3b;
-  color: #000;
-  padding: 20px;
-  font-weight: bold;
-}
-
-/* ----------------------- Footer ----------------------- */
+/* ===== FOOTER ===== */
 footer {
+  background: #000;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  background-color: #000;
-  color: #fff;
-  font-size: 14px;
 }
 
-/* ----------------------- WhatsApp Button ----------------------- */
-.whatsapp-float {
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp {
   position: fixed;
-  bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: #fff;
+  bottom: 20px;
+  background: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  font-size: 28px;
-  line-height: 50px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-  z-index: 100;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-/* ----------------------- Responsive ----------------------- */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .services, .projects, .testimonials {
+  .cards {
     flex-direction: column;
     align-items: center;
   }
