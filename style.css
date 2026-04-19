@@ -1,8 +1,16 @@
+/* ============================= */
+/* AFRICANNESE GROUP MASTER CSS */
+/* ============================= */
+
+
+/* GLOBAL SETTINGS */
+
 body {
 
-margin:0;
-font-family:Arial, sans-serif;
-background:#f5f6f8;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #f5f6f8;
+color: #222;
 
 }
 
@@ -12,182 +20,59 @@ background:#f5f6f8;
 
 header {
 
-background:#0c2340;
-color:white;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+background: #0c2340;
+color: white;
+padding: 20px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 
 }
 
 
 header h1 {
 
-margin:0;
+margin: 0;
+letter-spacing: 1px;
 
 }
 
+
+
+/* NAVIGATION */
 
 nav a {
 
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
+color: white;
+margin-left: 20px;
+text-decoration: none;
+font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+opacity: 0.7;
 
 }
 
 
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
 
-background:#0c2340;
-color:white;
-text-align:center;
-padding:70px 20px;
+background: #0c2340;
+color: white;
+text-align: center;
+padding: 70px 20px;
 
 }
 
 
 .hero h2 {
 
-color:#ffcc00;
-font-size:28px;
-
-}
-
-
-
-/* DIVISION CARDS */
-
-.division-container {
-
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-
-}
-
-
-.division-card {
-
-background:white;
-padding:40px;
-border-radius:12px;
-box-shadow:0px 5px 20px rgba(0,0,0,0.08);
-
-}
-
-
-.division-card h2 {
-
-color:#0c2340;
-
-}
-
-
-
-/* BUTTON STYLE */
-
-.division-button {
-
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:#0c2340;
-color:white;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-
-}
-
-
-.division-button:hover {
-
-background:#06172a;
-
-}
-
-
-
-/* TRUST SECTION */
-
-.trust-section {
-
-background:white;
-padding:50px 20px;
-text-align:center;
-
-}
-
-
-.trust-section h2 {
-
-color:#0c2340;
-
-}
-
-
-
-/* FOOTER */
-
-footer {
-
-background:#0c2340;
-color:white;
-text-align:center;
-padding:25px;
-
-}
-
-
-
-/* WHATSAPP FLOAT BUTTON */
-
-.whatsapp {
-
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0px 4px 12px rgba(0,0,0,0.25);
-
-}
-
-
-
-/* MOBILE FIX */
-
-@media (max-width:768px){
-
-.division-container{
-
-grid-template-columns:1fr;
-
-}
-
-header{
-
-flex-direction:column;
-
-}
-
-nav{
-
-margin-top:10px;
-
-}
-
-}
+color: #ffcc00;
+font-size: 26
