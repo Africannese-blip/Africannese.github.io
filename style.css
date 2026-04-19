@@ -1,101 +1,65 @@
+/* GENERAL PAGE SETTINGS */
+
 body {
 
-margin:0;
-font-family:Arial;
-background:#f5f6f8;
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f5f6f8;
 
 }
 
+
+
+/* HEADER */
 
 header {
 
-background:#0c2340;
-color:white;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+background: #0c2340;
+color: white;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
 
 }
 
+
+header h1 {
+
+margin: 0;
+font-size: 24px;
+
+}
+
+
+
+/* NAVIGATION */
 
 nav a {
 
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
+color: white;
+margin-left: 20px;
+text-decoration: none;
+font-weight: bold;
 
 }
 
+
+nav a:hover {
+
+text-decoration: underline;
+
+}
+
+
+
+/* HERO SECTION */
 
 .hero {
 
-background:#0c2340;
-color:white;
-text-align:center;
-padding:50px 20px;
-
-}
-
-
-.logo {
-
-width:220px;
-margin-bottom:20px;
-
-}
-
-
-.cta {
-
-background:#25D366;
-padding:15px 30px;
-color:white;
-text-decoration:none;
-border-radius:30px;
-display:inline-block;
-margin-top:20px;
-
-}
-
-
-section {
-
-padding:40px 20px;
-max-width:900px;
-margin:auto;
-
-}
-
-
-section h2 {
-
-color:#0c2340;
-
-}
-
-
-footer {
-
-background:#0c2340;
-color:white;
-text-align:center;
-padding:20px;
-
-}
-
-
-.whatsapp {
-
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-
+background: #0c2340;
+color: white;
+text-align: center;
+padding: 60
 }
