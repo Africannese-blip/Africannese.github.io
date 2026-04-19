@@ -1,15 +1,27 @@
 /* ============================= */
 /* AFRICANNESE GROUP MASTER CSS */
+/* FINAL STABLE VERSION */
 /* ============================= */
 
 
-/* GLOBAL SETTINGS */
+/* RESET */
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+
+/* BODY */
 
 body {
 
-margin: 0;
 font-family: Arial, Helvetica, sans-serif;
-background: #f5f6f8;
+background: #f4f6f9;
 color: #222;
 
 }
@@ -22,18 +34,24 @@ header {
 
 background: #0c2340;
 color: white;
-padding: 20px 30px;
+
+padding: 18px 25px;
+
 display: flex;
 justify-content: space-between;
 align-items: center;
+
 flex-wrap: wrap;
 
 }
 
 
+
+/* HEADER TITLE */
+
 header h1 {
 
-margin: 0;
+font-size: 22px;
 letter-spacing: 1px;
 
 }
@@ -42,19 +60,29 @@ letter-spacing: 1px;
 
 /* NAVIGATION */
 
+nav {
+
+display: flex;
+flex-wrap: wrap;
+gap: 14px;
+
+}
+
+
+
 nav a {
 
 color: white;
-margin-left: 20px;
 text-decoration: none;
 font-weight: bold;
+font-size: 14px;
 
 }
 
 
 nav a:hover {
 
-opacity: 0.7;
+opacity: 0.75;
 
 }
 
@@ -66,13 +94,289 @@ opacity: 0.7;
 
 background: #0c2340;
 color: white;
+
 text-align: center;
-padding: 70px 20px;
+
+padding: 60px 20px;
 
 }
 
 
+
+/* LOGO SIZE FIX */
+
+.division-logo {
+
+width: 180px;
+max-width: 70%;
+height: auto;
+
+display: block;
+margin: auto;
+
+margin-bottom: 20px;
+
+}
+
+
+
+/* HERO TEXT */
+
 .hero h2 {
 
 color: #ffcc00;
-font-size: 26
+
+font-size: 24px;
+
+margin-top: 10px;
+
+}
+
+
+
+/* CTA BUTTON */
+
+.cta {
+
+display: inline-block;
+
+margin-top: 20px;
+
+background: #25D366;
+
+padding: 14px 30px;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 40px;
+
+font-weight: bold;
+
+transition: 0.2s ease;
+
+}
+
+
+.cta:hover {
+
+background: #1ebe5d;
+
+}
+
+
+
+/* CONTENT SECTIONS */
+
+section {
+
+max-width: 900px;
+
+margin: auto;
+
+padding: 45px 20px;
+
+}
+
+
+
+section h2 {
+
+color: #0c2340;
+
+margin-bottom: 14px;
+
+font-size: 22px;
+
+}
+
+
+
+section p {
+
+line-height: 1.7;
+
+margin-bottom: 12px;
+
+}
+
+
+
+section ul {
+
+padding-left: 18px;
+
+line-height: 1.8;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+background: #0c2340;
+
+color: white;
+
+text-align: center;
+
+padding: 20px;
+
+font-weight: bold;
+
+margin-top: 40px;
+
+}
+
+
+
+/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp {
+
+position: fixed;
+
+right: 18px;
+
+bottom: 18px;
+
+background: #25D366;
+
+color: white;
+
+padding: 14px 22px;
+
+border-radius: 40px;
+
+text-decoration: none;
+
+font-weight: bold;
+
+box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+
+}
+
+
+.whatsapp:hover {
+
+background: #1ebe5d;
+
+}
+
+
+
+/* HOMEPAGE DIVISION CARDS */
+
+.division-container {
+
+max-width: 1100px;
+
+margin: auto;
+
+padding: 50px 20px;
+
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap: 30px;
+
+}
+
+
+
+.division-card {
+
+background: white;
+
+padding: 35px;
+
+border-radius: 14px;
+
+box-shadow: 0px 5px 22px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* DIVISION BUTTON */
+
+.division-button {
+
+display: inline-block;
+
+margin-top: 18px;
+
+padding: 12px 26px;
+
+background: #0c2340;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 30px;
+
+font-weight: bold;
+
+}
+
+
+.division-button:hover {
+
+background: #06172a;
+
+}
+
+
+
+/* MOBILE OPTIMISATION */
+
+@media (max-width: 768px)
+
+{
+
+header {
+
+flex-direction: column;
+
+align-items: center;
+
+text-align: center;
+
+}
+
+
+nav {
+
+justify-content: center;
+
+margin-top: 8px;
+
+}
+
+
+.hero {
+
+padding: 50px 15px;
+
+}
+
+
+section {
+
+padding: 40px 16px;
+
+}
+
+
+.division-container {
+
+grid-template-columns: 1fr;
+
+}
+
+}
