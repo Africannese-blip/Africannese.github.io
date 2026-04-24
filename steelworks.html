@@ -6,71 +6,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Africannese Steelworks Services</title>
+<title>Africannese Steelworks Division</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:#f5f5f5;
-}
-
-header{
-background:black;
+font-family:Arial, sans-serif;
+background:#000;
 color:white;
-text-align:center;
-padding:20px;
 }
 
-.contact-bar{
-background:#FFD700;
+/* HEADER */
+
+.hero{
+background:linear-gradient(135deg,#FFD700,#caa400);
 color:black;
 text-align:center;
-padding:12px;
-font-weight:bold;
+padding:80px 20px 60px 20px;
 }
 
-.contact-bar a{
-color:black;
-text-decoration:none;
+.hero h1{
+font-size:42px;
+margin-top:20px;
 }
+
+/* LOGO */
+
+.logo{
+max-width:220px;
+margin-bottom:10px;
+}
+
+/* NAVIGATION */
 
 nav{
 background:#111;
-text-align:center;
-padding:12px;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:12px;
 font-weight:bold;
+font-size:18px;
+transition:.3s;
 }
 
 nav a:hover{
 color:#FFD700;
 }
 
-.section{
-background:white;
-margin:25px;
-padding:40px;
-border-radius:8px;
+/* SERVICES SECTION */
+
+.services{
+padding:60px 25px;
+max-width:850px;
+margin:auto;
 text-align:center;
 }
 
+.services h2{
+color:#FFD700;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.services p{
+font-size:18px;
+line-height:2;
+}
+
+/* FOOTER */
+
 footer{
-background:black;
-color:white;
+background:#111;
+padding:45px 20px;
 text-align:center;
-padding:25px;
+font-size:17px;
 }
 
 footer a{
 color:#FFD700;
 text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
 }
 
 </style>
@@ -81,95 +106,80 @@ text-decoration:none;
 <body>
 
 
-<header>
+<!-- HEADER -->
+
+<section class="hero">
+
+<img src="steelworks-logo.png" class="logo">
 
 <h1>Africannese Steelworks Division</h1>
 
-</header>
+</section>
 
 
-<div class="contact-bar">
-
-Email:
-<a href="mailto:info@africannese.co.za">
-info@africannese.co.za
-</a>
-
-|
-
-Phone:
-<a href="tel:+27712447847">
-+27 71 244 7847
-</a>
-
-</div>
-
+<!-- NAVIGATION -->
 
 <nav>
 
 <a href="index.html">Home</a>
-<a href="steelworks.html">Steelworks</a>
-<a href="corporatewear.html">Corporate Wear</a>
-<a href="about.html">About</a>
+
+<a href="about.html">About Company</a>
 
 </nav>
 
 
-<div class="section">
+<!-- SERVICES -->
+
+<section class="services">
 
 <h2>Steelworks Services</h2>
 
-<p>Structural Steel Fabrication</p>
-<p>General Welding</p>
-<p>Steel Erection</p>
-<p>Balustrades & Gates</p>
-<p>Carports & Canopies</p>
-<p>Staircases & Platforms</p>
-<p>On-site Installation Services</p>
+<p>
 
-</div>
+Structural Steel Fabrication<br>
+
+General Welding<br>
+
+Steel Erection<br>
+
+Balustrades & Gates<br>
+
+Carports & Canopies<br>
+
+Staircases & Platforms<br>
+
+On-site Installation Services
+
+</p>
+
+</section>
 
 
-<div class="section">
-
-<h2>Project Capability</h2>
-
-<p>Commercial Steel Structures</p>
-<p>Industrial Installations</p>
-<p>Maintenance & Repairs</p>
-<p>Custom Fabrication Projects</p>
-
-</div>
-
+<!-- FOOTER -->
 
 <footer>
 
-<p><strong>Africannese Steelworks & Corporate Wear</strong></p>
-
-<p>
 Email:
+
 <a href="mailto:info@africannese.co.za">
+
 info@africannese.co.za
-</a>
-</p>
 
-<p>
+</a>
+
+&nbsp;&nbsp;|&nbsp;&nbsp;
+
 Phone:
+
 <a href="tel:+27712447847">
+
 +27 71 244 7847
-</a>
-</p>
 
-<p>
-Website:
-<a href="https://www.africannese.co.za">
-www.africannese.co.za
 </a>
-</p>
 
-<p>
-© 2026 Africannese. All rights reserved.
-</p>
+<br><br>
+
+© 2026 Africannese Steelworks Division
 
 </footer>
 
