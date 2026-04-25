@@ -25,9 +25,21 @@ text-align:center;
 padding:90px 20px;
 }
 
+.hero img{
+width:200px;
+max-width:80%;
+margin-bottom:20px;
+filter:drop-shadow(0px 6px 12px rgba(0,0,0,0.4));
+}
+
 .hero h1{
 font-size:44px;
 margin:0;
+}
+
+.hero p{
+font-size:18px;
+margin-top:12px;
 }
 
 /* NAVIGATION */
@@ -52,7 +64,7 @@ nav a:hover{
 color:#FFD700;
 }
 
-/* SERVICES */
+/* CONTENT SECTIONS */
 
 .section{
 max-width:850px;
@@ -70,6 +82,20 @@ margin-bottom:30px;
 .section p{
 font-size:18px;
 line-height:2;
+}
+
+/* BUTTON */
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:16px 35px;
+background:black;
+color:#FFD700;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+font-size:18px;
 }
 
 /* FOOTER */
@@ -90,18 +116,6 @@ footer a:hover{
 text-decoration:underline;
 }
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:16px 35px;
-background:black;
-color:#FFD700;
-font-weight:bold;
-text-decoration:none;
-border-radius:6px;
-font-size:18px;
-}
-
 </style>
 
 </head>
@@ -116,13 +130,15 @@ font-size:18px;
 
 <section class="hero">
 
+<img src="steelworks-logo.png">
+
 <h1>
 
 Africannese Steelworks Division
 
 </h1>
 
-<p style="margin-top:12px;font-size:18px;">
+<p>
 
 Structural Steel Fabrication • Welding • Installations
 
