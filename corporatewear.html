@@ -1,319 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Africannese Corporate Wear Division</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
-background:black;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#050505;
 color:white;
 }
 
-/* HEADER */
+/* HERO */
 
 .hero{
-background:linear-gradient(135deg,#FFD700,#caa400);
-color:black;
+background:linear-gradient(135deg,#12d8d8,#0aa2a2);
+padding:100px 20px 80px;
 text-align:center;
-padding:90px 20px;
 }
 
 .hero h1{
-font-size:44px;
-margin:0;
+font-size:60px;
+font-weight:900;
+line-height:1.1;
+color:white;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:24px;
+line-height:1.6;
+color:#eefefe;
 }
 
 /* NAVIGATION */
 
 nav{
-background:#111;
+background:#0d0d0d;
+padding:20px;
 display:flex;
 justify-content:center;
-gap:40px;
-padding:18px;
+gap:15px;
+flex-wrap:wrap;
+border-top:2px solid #12d8d8;
+border-bottom:1px solid #1e1e1e;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-font-size:18px;
+padding:15px 24px;
+border-radius:40px;
+font-size:16px;
 font-weight:bold;
-transition:.3s;
+background:#161616;
+color:white;
+border:1px solid #2a2a2a;
+transition:0.3s;
 }
 
 nav a:hover{
-color:#FFD700;
+transform:translateY(-2px);
+background:#12d8d8;
+color:black;
 }
 
-/* CONTENT SECTIONS */
+.active{
+background:#12d8d8;
+color:black;
+box-shadow:0 0 18px rgba(18,216,216,0.6);
+}
+
+/* SECTION */
 
 .section{
-max-width:850px;
-margin:auto;
-padding:70px 25px;
+padding:80px 25px;
 text-align:center;
 }
 
 .section h2{
-color:#FFD700;
-font-size:32px;
-margin-bottom:30px;
+font-size:54px;
+margin-bottom:40px;
+color:#12d8d8;
 }
 
-.section p{
+.service-box{
+background:#101010;
+padding:45px 30px;
+border-radius:28px;
+border:1px solid #1f1f1f;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+max-width:900px;
+margin:auto;
+}
+
+.service-box p{
+font-size:24px;
+line-height:2;
+color:#f5f5f5;
+}
+
+/* CAPABILITIES */
+
+.capabilities{
+padding:70px 25px;
+background:#0b0b0b;
+}
+
+.capabilities h2{
+text-align:center;
+font-size:50px;
+margin-bottom:45px;
+color:#12d8d8;
+}
+
+.cap-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.cap-card{
+background:#121212;
+padding:35px;
+border-radius:22px;
+border:1px solid #202020;
+}
+
+.cap-card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#12d8d8;
+}
+
+.cap-card p{
 font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+padding:70px 25px;
+text-align:center;
+}
+
+.testimonials h2{
+font-size:50px;
+margin-bottom:45px;
+color:#12d8d8;
+}
+
+.testimonial{
+background:#101010;
+padding:35px;
+border-radius:22px;
+margin-bottom:25px;
+border-left:5px solid #12d8d8;
+}
+
+.testimonial p{
+font-size:19px;
+line-height:1.8;
+color:#eee;
+}
+
+.testimonial h4{
+margin-top:18px;
+font-size:20px;
+color:#12d8d8;
+}
+
+/* CONTACT */
+
+.contact{
+background:#101010;
+padding:70px 25px;
+text-align:center;
+border-top:2px solid #12d8d8;
+}
+
+.contact h2{
+font-size:45px;
+margin-bottom:30px;
+color:#12d8d8;
+}
+
+.contact p{
+font-size:22px;
 line-height:2;
 }
 
-/* CTA BUTTON */
-
-.button{
-display:inline-block;
-margin-top:20px;
-padding:16px 35px;
-background:black;
-color:#FFD700;
+.highlight{
+color:#12d8d8;
 font-weight:bold;
-text-decoration:none;
-border-radius:6px;
-font-size:18px;
 }
 
-/* FOOTER */
+/* MOBILE */
 
-footer{
-background:#111;
-padding:45px;
-text-align:center;
-font-size:17px;
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
 }
 
-footer a{
-color:#FFD700;
-text-decoration:none;
+.section h2,
+.capabilities h2,
+.testimonials h2,
+.contact h2{
+font-size:40px;
 }
 
-footer a:hover{
-text-decoration:underline;
+.service-box p{
+font-size:20px;
+}
+
 }
 
 </style>
 
 </head>
 
-
-
 <body>
-
-
-
-<!-- HEADER -->
 
 <section class="hero">
 
 <h1>
-
-Africannese Corporate Wear Division
-
+Africannese<br>
+Corporate Wear<br>
+Division
 </h1>
 
-<p style="margin-top:12px;font-size:18px;">
-
-Corporate Clothing • PPE Supply • Branding & Printing
-
+<p>
+Corporate Clothing • PPE Supply •<br>
+Branding & Printing
 </p>
 
 </section>
-
-
-
-<!-- NAVIGATION -->
 
 <nav>
 
-<a href="index.html">Home</a>
+<a href="index.html">
+Home
+</a>
 
-<a href="about.html">About Company</a>
+<a href="steelworks.html">
+Steelworks
+</a>
+
+<a href="corporatewear.html" class="active">
+Corporate Wear
+</a>
+
+<a href="about.html">
+About Company
+</a>
 
 </nav>
 
-
-
-<!-- PRODUCT SUPPLY -->
-
 <section class="section">
 
-<h2>Corporate Wear Supply</h2>
+<h2>
+Corporate Wear Supply
+</h2>
+
+<div class="service-box">
 
 <p>
-
 Company Branded T-Shirts<br>
-
 Golf Shirts<br>
-
 Workwear & Overalls<br>
-
 Reflective PPE Clothing<br>
-
 Safety Boots<br>
-
 Corporate Jackets<br>
-
 Caps & Headwear<br>
-
-Hospitality Uniforms
-
+Industrial Uniforms
 </p>
+
+</div>
 
 </section>
 
+<section class="capabilities">
 
+<h2>
+Our Capabilities
+</h2>
 
-<!-- BRANDING SERVICES -->
+<div class="cap-grid">
 
-<section class="section" style="background:#111;">
+<div class="cap-card">
 
-<h2>Branding Services</h2>
+<h3>
+Branding & Embroidery
+</h3>
 
 <p>
-
-Embroidery Branding<br>
-
-Screen Printing<br>
-
-Heat Press Branding<br>
-
-DTF Printing<br>
-
-Corporate Logo Placement<br>
-
-Bulk Uniform Branding Projects
-
+Professional embroidery, vinyl printing and corporate branding solutions with premium finishing.
 </p>
 
-</section>
+</div>
 
+<div class="cap-card">
 
-
-<!-- WHY CHOOSE US -->
-
-<section class="section">
-
-<h2>Why Choose Africannese Corporate Wear</h2>
+<h3>
+Bulk Uniform Supply
+</h3>
 
 <p>
-
-Bulk Order Capability<br>
-
-Reliable Supply Turnaround<br>
-
-Quality Branding Finishes<br>
-
-Competitive Pricing<br>
-
-Serving Businesses, Schools & Churches<br>
-
-Nationwide Delivery Available
-
+Reliable PPE and corporate clothing supply for businesses, construction companies and institutions.
 </p>
 
-</section>
+</div>
 
+<div class="cap-card">
 
-
-<!-- CLIENT REFERENCES -->
-
-<section class="section" style="background:#111;">
-
-<h2>Client Supply References</h2>
+<h3>
+Premium Quality Standards
+</h3>
 
 <p>
-
-Church Uniform Supply Projects<br>
-
-Construction PPE Supply<br>
-
-School Staff Uniform Branding<br>
-
-Security Company Workwear Supply<br>
-
-Corporate Promotional Apparel Supply
-
+We focus on durable materials, clean branding and professional presentation for every client.
 </p>
 
-<p style="margin-top:25px;color:#ccc;">
+</div>
 
-Detailed supply references available on request
-
-</p>
+</div>
 
 </section>
 
+<section class="testimonials">
 
+<h2>
+Client Testimonials
+</h2>
 
-<!-- CALL TO ACTION -->
+<div class="testimonial">
 
-<section class="section" style="background:linear-gradient(135deg,#FFD700,#caa400); color:black;">
+<p>
+“Africannese delivered high-quality branded uniforms with excellent turnaround time.”
+</p>
 
-<h2 style="color:black;">
+<h4>
+— Corporate Client
+</h4>
 
-Request a Quote
+</div>
 
+<div class="testimonial">
+
+<p>
+“The embroidery and garment quality exceeded our expectations.”
+</p>
+
+<h4>
+— Business Customer
+</h4>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>
+Contact Africannese Group
 </h2>
 
 <p>
 
-Contact us for corporate clothing supply, PPE orders or branding services.
-
-</p>
-
-<a href="mailto:info@africannese.co.za" class="button">
-
-Email Us Now
-
-</a>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
 Email:
-
-<a href="mailto:info@africannese.co.za">
-
+<span class="highlight">
 info@africannese.co.za
-
-</a>
-
-&nbsp;&nbsp;|&nbsp;&nbsp;
-
-Phone:
-
-<a href="tel:+27712447847">
-
-+27 71 244 7847
-
-</a>
+</span>
 
 <br><br>
 
-© 2026 Africannese Corporate Wear Division
+Phone:
+<span class="highlight">
++27 71 244 7847
+</span>
 
-</footer>
+</p>
 
-
+</section>
 
 </body>
-
 </html>
