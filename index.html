@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Africannese Group</title>
+<title>Africannese Corporate Wear Division</title>
 
 <style>
 
@@ -15,7 +17,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#000;
 color:white;
 }
@@ -28,169 +30,195 @@ padding:100px 20px 80px;
 text-align:center;
 }
 
-.logo{
+.hero img{
 width:110px;
 margin-bottom:25px;
 }
 
 .hero h1{
-font-size:64px;
+font-size:58px;
 font-weight:900;
-color:#000;
 line-height:1.1;
-margin-bottom:20px;
+color:#000;
+margin-bottom:25px;
 }
 
 .hero p{
 font-size:24px;
+line-height:1.5;
 color:#111;
-font-weight:500;
 }
 
 /* PREMIUM NAVIGATION */
 
-nav{
-background:#0f0f0f;
-padding:20px;
+.premium-nav{
+background:#0d0d0d;
+padding:18px 12px;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:18px;
+gap:12px;
 flex-wrap:wrap;
+border-top:2px solid #ffd700;
+border-bottom:1px solid #1f1f1f;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
 position:sticky;
 top:0;
 z-index:999;
-border-top:2px solid #ffd700;
-border-bottom:1px solid #222;
-box-shadow:0 5px 20px rgba(0,0,0,0.6);
 }
 
-nav a{
+.premium-nav a{
 text-decoration:none;
-font-size:17px;
-font-weight:bold;
-padding:14px 24px;
+color:white;
+font-size:15px;
+font-weight:700;
+padding:14px 18px;
 border-radius:40px;
+background:#161616;
+border:1px solid #2a2a2a;
 transition:0.3s;
 }
 
-.home-btn{
+.premium-nav a:hover{
 background:#ffd700;
-color:#000;
-box-shadow:0 0 18px rgba(255,215,0,0.5);
-}
-
-.dark-btn{
-background:#1a1a1a;
-color:white;
-border:1px solid #333;
-}
-
-nav a:hover{
+color:black;
 transform:translateY(-2px);
 }
 
-/* DIVISION CARDS */
-
-.container{
-padding:60px 25px;
+.nav-home{
+background:#ffd700 !important;
+color:black !important;
 }
 
-.card{
-background:#f5f5f5;
-color:#000;
-padding:45px 30px;
-border-radius:30px;
-margin-bottom:40px;
-text-align:center;
-box-shadow:0 10px 35px rgba(0,0,0,0.5);
+.active-nav{
+background:#ffd700 !important;
+color:black !important;
+box-shadow:0 0 15px rgba(255,215,0,0.5);
 }
 
-.card h2{
-font-size:46px;
-margin-bottom:30px;
-font-weight:900;
-}
+/* MAIN SECTION */
 
-.card p{
-font-size:22px;
-line-height:2;
-}
-
-.card-btn{
-display:inline-block;
-margin-top:35px;
-padding:18px 40px;
-background:#000;
-color:#ffd700;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-border-radius:12px;
-border:2px solid #ffd700;
-}
-
-/* WHY CHOOSE US */
-
-.why{
+.section{
 padding:70px 25px;
 text-align:center;
 }
 
-.why h2{
-font-size:52px;
+.section h2{
+font-size:54px;
 color:#ffd700;
-margin-bottom:45px;
+margin-bottom:40px;
+font-weight:900;
 }
 
-.features{
+.service-box{
+background:#111;
+padding:40px 30px;
+border-radius:25px;
+margin-bottom:30px;
+border:1px solid #222;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.service-box p{
+font-size:24px;
+line-height:2;
+color:#f1f1f1;
+}
+
+/* CAPABILITIES */
+
+.capabilities{
+padding:60px 25px;
+background:#080808;
+}
+
+.capabilities h2{
+text-align:center;
+font-size:50px;
+margin-bottom:40px;
+color:#ffd700;
+}
+
+.cap-grid{
 display:grid;
 grid-template-columns:1fr;
 gap:25px;
 }
 
-.feature-box{
+.cap-card{
 background:#111;
 padding:35px;
 border-radius:20px;
-border:1px solid #222;
+border:1px solid #242424;
 }
 
-.feature-box h3{
+.cap-card h3{
 font-size:28px;
-margin-bottom:15px;
+margin-bottom:18px;
 color:#ffd700;
 }
 
-.feature-box p{
+.cap-card p{
 font-size:18px;
-line-height:1.7;
+line-height:1.8;
 color:#ddd;
 }
 
-/* FOOTER */
+/* TESTIMONIALS */
 
-footer{
-background:#111;
-padding:50px 20px;
+.testimonials{
+padding:70px 25px;
 text-align:center;
-margin-top:50px;
+}
+
+.testimonials h2{
+font-size:50px;
+margin-bottom:45px;
+color:#ffd700;
+}
+
+.testimonial-box{
+background:#111;
+padding:35px;
+border-radius:20px;
+margin-bottom:25px;
+border-left:5px solid #ffd700;
+}
+
+.testimonial-box p{
+font-size:19px;
+line-height:1.8;
+color:#eee;
+}
+
+.testimonial-box h4{
+margin-top:20px;
+font-size:20px;
+color:#ffd700;
+}
+
+/* CONTACT SECTION */
+
+.contact{
+padding:70px 25px;
+text-align:center;
+background:#111;
 border-top:2px solid #ffd700;
 }
 
-footer h3{
-font-size:30px;
-margin-bottom:20px;
+.contact h2{
+font-size:45px;
+margin-bottom:30px;
 color:#ffd700;
 }
 
-footer p{
-font-size:20px;
-line-height:1.9;
-color:#ddd;
+.contact p{
+font-size:22px;
+line-height:2;
+color:#eee;
 }
 
-.contact-highlight{
+.highlight{
 color:#ffd700;
 font-weight:bold;
 }
@@ -203,22 +231,21 @@ font-weight:bold;
 font-size:48px;
 }
 
-.card h2{
-font-size:38px;
+.section h2,
+.capabilities h2,
+.testimonials h2,
+.contact h2{
+font-size:40px;
 }
 
-nav{
-gap:12px;
-}
-
-nav a{
-font-size:15px;
-padding:12px 18px;
+.service-box p{
+font-size:20px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -227,151 +254,177 @@ padding:12px 18px;
 
 <section class="hero">
 
-<img src="logo.png" alt="Africannese Logo" class="logo">
+<img src="logo.png" alt="Africannese Logo">
 
 <h1>
 Africannese<br>
-Group
+Corporate Wear<br>
+Division
 </h1>
 
 <p>
-Premium Industrial & Corporate Solutions
+Corporate Clothing • PPE Supply •<br>
+Branding & Printing
 </p>
 
 </section>
 
 <!-- NAVIGATION -->
 
-<nav>
+<nav class="premium-nav">
 
-<a href="index.html" class="home-btn">
+<a href="index.html" class="nav-home">
 Home
 </a>
 
-<a href="steelworks.html" class="dark-btn">
+<a href="steelworks.html">
 Steelworks
 </a>
 
-<a href="corporatewear.html" class="dark-btn">
+<a href="corporatewear.html" class="active-nav">
 Corporate Wear
 </a>
 
-<a href="about.html" class="dark-btn">
+<a href="about.html">
 About Company
 </a>
 
 </nav>
 
-<!-- DIVISIONS -->
+<!-- SERVICES -->
 
-<section class="container">
-
-<div class="card">
-
-<h2>
-Steelworks & Construction
-</h2>
-
-<p>
-Structural Steel Fabrication<br>
-General Welding<br>
-Steel Erection<br>
-Industrial Installations
-</p>
-
-<a href="steelworks.html" class="card-btn">
-Enter Division
-</a>
-
-</div>
-
-<div class="card">
+<section class="section">
 
 <h2>
 Corporate Wear Supply
 </h2>
 
-<p>
-Protective Workwear<br>
-Corporate Apparel<br>
-Reflective PPE Clothing<br>
-Safety Footwear
-</p>
+<div class="service-box">
 
-<a href="corporatewear.html" class="card-btn">
-Enter Division
-</a>
+<p>
+Company Branded T-Shirts<br>
+Golf Shirts<br>
+Workwear & Overalls<br>
+Reflective PPE Clothing<br>
+Safety Boots<br>
+Corporate Jackets<br>
+Caps & Headwear<br>
+Industrial Uniforms
+</p>
 
 </div>
 
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- CAPABILITIES -->
 
-<section class="why">
+<section class="capabilities">
 
 <h2>
-Why Choose Africannese Group
+Our Capabilities
 </h2>
 
-<div class="features">
+<div class="cap-grid">
 
-<div class="feature-box">
+<div class="cap-card">
+
 <h3>
-Professional Service
+Branding & Printing
 </h3>
+
 <p>
-Reliable industrial and corporate solutions delivered with professionalism and attention to detail.
+Premium embroidery, vinyl printing, screen printing and corporate branding solutions for businesses and institutions.
 </p>
+
 </div>
 
-<div class="feature-box">
+<div class="cap-card">
+
 <h3>
-Premium Quality
+Bulk Supply
 </h3>
+
 <p>
-We focus on high-quality workmanship, durable products, and excellent finishing standards.
+Reliable supply of corporate clothing and PPE for companies, schools, construction sites and industrial projects.
 </p>
+
 </div>
 
-<div class="feature-box">
+<div class="cap-card">
+
 <h3>
-Trusted Brand
+Professional Quality
 </h3>
+
 <p>
-Africannese Group is committed to building a respected African brand capable of competing globally.
+We focus on durable products, clean finishing and premium presentation standards.
 </p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- FOOTER -->
+<!-- TESTIMONIALS -->
 
-<footer>
+<section class="testimonials">
 
-<h3>
+<h2>
+Client Testimonials
+</h2>
+
+<div class="testimonial-box">
+
+<p>
+“Africannese delivered quality branded workwear for our team with professional service and fast turnaround time.”
+</p>
+
+<h4>
+— Industrial Client
+</h4>
+
+</div>
+
+<div class="testimonial-box">
+
+<p>
+“The embroidery quality and overall finishing exceeded our expectations. Highly recommended.”
+</p>
+
+<h4>
+— Corporate Customer
+</h4>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>
 Contact Africannese Group
-</h3>
+</h2>
 
 <p>
 
 Email:
-<span class="contact-highlight">
+<span class="highlight">
 info@africannese.co.za
 </span>
 
 <br><br>
 
 Phone:
-<span class="contact-highlight">
+<span class="highlight">
 +27 71 244 7847
 </span>
 
 </p>
 
-</footer>
+</section>
 
 </body>
 </html>
