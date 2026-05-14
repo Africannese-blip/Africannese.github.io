@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Africannese Corporate Wear Division</title>
+<title>Africannese Group</title>
 
 <style>
 
@@ -20,202 +20,184 @@ body{
 font-family:Arial,sans-serif;
 background:#000;
 color:white;
+overflow-x:hidden;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 background:linear-gradient(135deg,#ffd700,#d4af37);
-padding:100px 20px 80px;
+padding:100px 20px 90px;
 text-align:center;
 }
 
-.hero img{
-width:110px;
+.logo{
+width:120px;
 margin-bottom:25px;
 }
 
 .hero h1{
-font-size:58px;
+font-size:68px;
 font-weight:900;
-line-height:1.1;
+line-height:1.05;
 color:#000;
 margin-bottom:25px;
 }
 
 .hero p{
-font-size:24px;
-line-height:1.5;
+font-size:26px;
 color:#111;
+line-height:1.6;
 }
 
 /* PREMIUM NAVIGATION */
 
-.premium-nav{
+nav{
 background:#0d0d0d;
-padding:18px 12px;
+padding:22px 15px;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:12px;
+gap:15px;
 flex-wrap:wrap;
 border-top:2px solid #ffd700;
 border-bottom:1px solid #1f1f1f;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+box-shadow:0 8px 30px rgba(0,0,0,0.5);
 position:sticky;
 top:0;
 z-index:999;
 }
 
-.premium-nav a{
+nav a{
 text-decoration:none;
-color:white;
-font-size:15px;
-font-weight:700;
-padding:14px 18px;
+padding:15px 24px;
 border-radius:40px;
+font-size:16px;
+font-weight:bold;
 background:#161616;
+color:white;
 border:1px solid #2a2a2a;
 transition:0.3s;
 }
 
-.premium-nav a:hover{
+nav a:hover{
 background:#ffd700;
 color:black;
 transform:translateY(-2px);
 }
 
-.nav-home{
-background:#ffd700 !important;
-color:black !important;
+.active{
+background:#ffd700;
+color:black;
+box-shadow:0 0 18px rgba(255,215,0,0.6);
 }
 
-.active-nav{
-background:#ffd700 !important;
-color:black !important;
-box-shadow:0 0 15px rgba(255,215,0,0.5);
+/* DIVISION SECTION */
+
+.divisions{
+padding:80px 25px;
 }
 
-/* MAIN SECTION */
-
-.section{
-padding:70px 25px;
-text-align:center;
-}
-
-.section h2{
-font-size:54px;
-color:#ffd700;
+.card{
+background:#f5f5f5;
+color:black;
+padding:50px 35px;
+border-radius:30px;
 margin-bottom:40px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.card h2{
+font-size:52px;
 font-weight:900;
-}
-
-.service-box{
-background:#111;
-padding:40px 30px;
-border-radius:25px;
 margin-bottom:30px;
-border:1px solid #222;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
+line-height:1.1;
 }
 
-.service-box p{
+.card p{
 font-size:24px;
 line-height:2;
-color:#f1f1f1;
+color:#111;
 }
 
-/* CAPABILITIES */
-
-.capabilities{
-padding:60px 25px;
-background:#080808;
+.card-btn{
+display:inline-block;
+margin-top:35px;
+padding:18px 42px;
+background:#000;
+color:#ffd700;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:14px;
+border:2px solid #ffd700;
+transition:0.3s;
 }
 
-.capabilities h2{
+.card-btn:hover{
+background:#ffd700;
+color:black;
+}
+
+/* WHY US */
+
+.why{
+padding:80px 25px;
 text-align:center;
-font-size:50px;
-margin-bottom:40px;
+background:#050505;
+}
+
+.why h2{
+font-size:56px;
+margin-bottom:50px;
 color:#ffd700;
 }
 
-.cap-grid{
+.feature-grid{
 display:grid;
 grid-template-columns:1fr;
 gap:25px;
 }
 
-.cap-card{
+.feature{
 background:#111;
-padding:35px;
-border-radius:20px;
-border:1px solid #242424;
+padding:40px 30px;
+border-radius:24px;
+border:1px solid #202020;
 }
 
-.cap-card h3{
-font-size:28px;
-margin-bottom:18px;
+.feature h3{
+font-size:30px;
+margin-bottom:20px;
 color:#ffd700;
 }
 
-.cap-card p{
-font-size:18px;
+.feature p{
+font-size:19px;
 line-height:1.8;
 color:#ddd;
 }
 
-/* TESTIMONIALS */
-
-.testimonials{
-padding:70px 25px;
-text-align:center;
-}
-
-.testimonials h2{
-font-size:50px;
-margin-bottom:45px;
-color:#ffd700;
-}
-
-.testimonial-box{
-background:#111;
-padding:35px;
-border-radius:20px;
-margin-bottom:25px;
-border-left:5px solid #ffd700;
-}
-
-.testimonial-box p{
-font-size:19px;
-line-height:1.8;
-color:#eee;
-}
-
-.testimonial-box h4{
-margin-top:20px;
-font-size:20px;
-color:#ffd700;
-}
-
-/* CONTACT SECTION */
+/* CONTACT */
 
 .contact{
-padding:70px 25px;
-text-align:center;
 background:#111;
+padding:80px 25px;
+text-align:center;
 border-top:2px solid #ffd700;
 }
 
 .contact h2{
-font-size:45px;
-margin-bottom:30px;
+font-size:50px;
+margin-bottom:35px;
 color:#ffd700;
 }
 
 .contact p{
-font-size:22px;
+font-size:24px;
 line-height:2;
-color:#eee;
+color:#f1f1f1;
 }
 
 .highlight{
@@ -228,18 +210,29 @@ font-weight:bold;
 @media(max-width:768px){
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 }
 
-.section h2,
-.capabilities h2,
-.testimonials h2,
-.contact h2{
+.hero p{
+font-size:22px;
+}
+
+.card h2{
 font-size:40px;
 }
 
-.service-box p{
+.card p{
 font-size:20px;
+}
+
+.why h2,
+.contact h2{
+font-size:42px;
+}
+
+nav a{
+font-size:15px;
+padding:14px 18px;
 }
 
 }
@@ -254,26 +247,25 @@ font-size:20px;
 
 <section class="hero">
 
-<img src="logo.png" alt="Africannese Logo">
+<img src="logo.png" alt="Africannese Logo" class="logo">
 
 <h1>
 Africannese<br>
-Corporate Wear<br>
-Division
+Group
 </h1>
 
 <p>
-Corporate Clothing • PPE Supply •<br>
-Branding & Printing
+Premium Industrial, Corporate Wear<br>
+& Construction Solutions
 </p>
 
 </section>
 
 <!-- NAVIGATION -->
 
-<nav class="premium-nav">
+<nav>
 
-<a href="index.html" class="nav-home">
+<a href="index.html" class="active">
 Home
 </a>
 
@@ -281,7 +273,7 @@ Home
 Steelworks
 </a>
 
-<a href="corporatewear.html" class="active-nav">
+<a href="corporatewear.html">
 Corporate Wear
 </a>
 
@@ -291,110 +283,95 @@ About Company
 
 </nav>
 
-<!-- SERVICES -->
+<!-- DIVISIONS -->
 
-<section class="section">
+<section class="divisions">
+
+<div class="card">
+
+<h2>
+Steelworks & Construction
+</h2>
+
+<p>
+Structural Steel Fabrication<br>
+General Welding<br>
+Steel Erection<br>
+Industrial Installations
+</p>
+
+<a href="steelworks.html" class="card-btn">
+Enter Division
+</a>
+
+</div>
+
+<div class="card">
 
 <h2>
 Corporate Wear Supply
 </h2>
 
-<div class="service-box">
-
 <p>
-Company Branded T-Shirts<br>
-Golf Shirts<br>
-Workwear & Overalls<br>
-Reflective PPE Clothing<br>
-Safety Boots<br>
-Corporate Jackets<br>
-Caps & Headwear<br>
-Industrial Uniforms
+Corporate Clothing<br>
+Reflective PPE Wear<br>
+Branding & Printing<br>
+Safety Footwear
 </p>
+
+<a href="corporatewear.html" class="card-btn">
+Enter Division
+</a>
 
 </div>
 
 </section>
 
-<!-- CAPABILITIES -->
+<!-- WHY CHOOSE US -->
 
-<section class="capabilities">
-
-<h2>
-Our Capabilities
-</h2>
-
-<div class="cap-grid">
-
-<div class="cap-card">
-
-<h3>
-Branding & Printing
-</h3>
-
-<p>
-Premium embroidery, vinyl printing, screen printing and corporate branding solutions for businesses and institutions.
-</p>
-
-</div>
-
-<div class="cap-card">
-
-<h3>
-Bulk Supply
-</h3>
-
-<p>
-Reliable supply of corporate clothing and PPE for companies, schools, construction sites and industrial projects.
-</p>
-
-</div>
-
-<div class="cap-card">
-
-<h3>
-Professional Quality
-</h3>
-
-<p>
-We focus on durable products, clean finishing and premium presentation standards.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="testimonials">
+<section class="why">
 
 <h2>
-Client Testimonials
+Why Choose Africannese Group
 </h2>
 
-<div class="testimonial-box">
+<div class="feature-grid">
+
+<div class="feature">
+
+<h3>
+Premium Quality
+</h3>
 
 <p>
-“Africannese delivered quality branded workwear for our team with professional service and fast turnaround time.”
+We focus on quality workmanship, durable materials and professional finishing standards.
 </p>
-
-<h4>
-— Industrial Client
-</h4>
 
 </div>
 
-<div class="testimonial-box">
+<div class="feature">
+
+<h3>
+Professional Service
+</h3>
 
 <p>
-“The embroidery quality and overall finishing exceeded our expectations. Highly recommended.”
+Reliable industrial and corporate solutions delivered with professionalism and attention to detail.
 </p>
 
-<h4>
-— Corporate Customer
-</h4>
+</div>
+
+<div class="feature">
+
+<h3>
+Trusted Brand
+</h3>
+
+<p>
+Africannese Group is committed to building an African brand capable of competing globally.
+</p>
+
+</div>
 
 </div>
 
