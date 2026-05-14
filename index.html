@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,106 +8,165 @@
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Arial, sans-serif;
 background:#000;
 color:white;
 }
 
-/* GOLD HEADER */
+/* HERO SECTION */
 
 .hero{
-background:linear-gradient(135deg,#FFD700,#caa400);
-color:black;
+background:linear-gradient(135deg,#ffd700,#d4af37);
+padding:100px 20px 80px;
 text-align:center;
-padding:90px 20px 70px 20px;
+}
+
+.logo{
+width:110px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-
-/* NAVIGATION */
-
-nav{
-background:#111;
-display:flex;
-justify-content:center;
-gap:40px;
-padding:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#FFD700;
-}
-
-
-/* DIVISION SECTION */
-
-.divisions{
-padding:60px 20px;
-}
-
-
-/* CARD DESIGN */
-
-.card{
-background:white;
-color:black;
-padding:60px 40px;
-border-radius:14px;
-max-width:460px;
-margin:40px auto;
-box-shadow:0px 12px 30px rgba(0,0,0,.35);
-text-align:center;
-}
-
-.card h2{
-font-size:30px;
+font-size:64px;
+font-weight:900;
+color:#000;
+line-height:1.1;
 margin-bottom:20px;
 }
 
+.hero p{
+font-size:24px;
+color:#111;
+font-weight:500;
+}
+
+/* PREMIUM NAVIGATION */
+
+nav{
+background:#0f0f0f;
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:18px;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:999;
+border-top:2px solid #ffd700;
+border-bottom:1px solid #222;
+box-shadow:0 5px 20px rgba(0,0,0,0.6);
+}
+
+nav a{
+text-decoration:none;
+font-size:17px;
+font-weight:bold;
+padding:14px 24px;
+border-radius:40px;
+transition:0.3s;
+}
+
+.home-btn{
+background:#ffd700;
+color:#000;
+box-shadow:0 0 18px rgba(255,215,0,0.5);
+}
+
+.dark-btn{
+background:#1a1a1a;
+color:white;
+border:1px solid #333;
+}
+
+nav a:hover{
+transform:translateY(-2px);
+}
+
+/* DIVISION CARDS */
+
+.container{
+padding:60px 25px;
+}
+
+.card{
+background:#f5f5f5;
+color:#000;
+padding:45px 30px;
+border-radius:30px;
+margin-bottom:40px;
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,0.5);
+}
+
+.card h2{
+font-size:46px;
+margin-bottom:30px;
+font-weight:900;
+}
+
 .card p{
+font-size:22px;
+line-height:2;
+}
+
+.card-btn{
+display:inline-block;
+margin-top:35px;
+padding:18px 40px;
+background:#000;
+color:#ffd700;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:12px;
+border:2px solid #ffd700;
+}
+
+/* WHY CHOOSE US */
+
+.why{
+padding:70px 25px;
+text-align:center;
+}
+
+.why h2{
+font-size:52px;
+color:#ffd700;
+margin-bottom:45px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.feature-box{
+background:#111;
+padding:35px;
+border-radius:20px;
+border:1px solid #222;
+}
+
+.feature-box h3{
+font-size:28px;
+margin-bottom:15px;
+color:#ffd700;
+}
+
+.feature-box p{
 font-size:18px;
 line-height:1.7;
+color:#ddd;
 }
-
-
-/* BUTTON */
-
-.card a{
-display:inline-block;
-margin-top:30px;
-padding:15px 40px;
-background:#FFD700;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-transition:.3s;
-}
-
-.card a:hover{
-background:black;
-color:#FFD700;
-border:2px solid #FFD700;
-}
-
 
 /* FOOTER */
 
@@ -117,130 +174,204 @@ footer{
 background:#111;
 padding:50px 20px;
 text-align:center;
-font-size:17px;
+margin-top:50px;
+border-top:2px solid #ffd700;
 }
 
-footer a{
-color:#FFD700;
-text-decoration:none;
+footer h3{
+font-size:30px;
+margin-bottom:20px;
+color:#ffd700;
 }
 
-footer a:hover{
-text-decoration:underline;
+footer p{
+font-size:20px;
+line-height:1.9;
+color:#ddd;
+}
+
+.contact-highlight{
+color:#ffd700;
+font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+.card h2{
+font-size:38px;
+}
+
+nav{
+gap:12px;
+}
+
+nav a{
+font-size:15px;
+padding:12px 18px;
+}
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- HEADER -->
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>Africannese Group</h1>
+<img src="logo.png" alt="Africannese Logo" class="logo">
 
-<p>Select a division below</p>
+<h1>
+Africannese<br>
+Group
+</h1>
+
+<p>
+Premium Industrial & Corporate Solutions
+</p>
 
 </section>
-
 
 <!-- NAVIGATION -->
 
 <nav>
 
-<a href="index.html">Home</a>
+<a href="index.html" class="home-btn">
+Home
+</a>
 
-<a href="about.html">About Company</a>
+<a href="steelworks.html" class="dark-btn">
+Steelworks
+</a>
+
+<a href="corporatewear.html" class="dark-btn">
+Corporate Wear
+</a>
+
+<a href="about.html" class="dark-btn">
+About Company
+</a>
 
 </nav>
 
-
 <!-- DIVISIONS -->
 
-<section class="divisions">
-
+<section class="container">
 
 <div class="card">
 
-<h2>Steelworks & Construction</h2>
+<h2>
+Steelworks & Construction
+</h2>
 
 <p>
-
-Structural steel fabrication<br>
-General welding<br>
-Steel erection<br>
-Industrial installations
-
+Structural Steel Fabrication<br>
+General Welding<br>
+Steel Erection<br>
+Industrial Installations
 </p>
 
-<a href="steelworks.html">
-
-Enter Steelworks Division
-
+<a href="steelworks.html" class="card-btn">
+Enter Division
 </a>
 
 </div>
 
-
-
 <div class="card">
 
-<h2>Corporate Wear & Branding</h2>
+<h2>
+Corporate Wear Supply
+</h2>
 
 <p>
-
-Corporate uniforms<br>
-PPE supply<br>
-Embroidery services<br>
-Printing & branding solutions
-
+Protective Workwear<br>
+Corporate Apparel<br>
+Reflective PPE Clothing<br>
+Safety Footwear
 </p>
 
-<a href="corporatewear.html">
-
-Enter Corporate Wear Division
-
+<a href="corporatewear.html" class="card-btn">
+Enter Division
 </a>
 
 </div>
-
 
 </section>
 
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+<h2>
+Why Choose Africannese Group
+</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>
+Professional Service
+</h3>
+<p>
+Reliable industrial and corporate solutions delivered with professionalism and attention to detail.
+</p>
+</div>
+
+<div class="feature-box">
+<h3>
+Premium Quality
+</h3>
+<p>
+We focus on high-quality workmanship, durable products, and excellent finishing standards.
+</p>
+</div>
+
+<div class="feature-box">
+<h3>
+Trusted Brand
+</h3>
+<p>
+Africannese Group is committed to building a respected African brand capable of competing globally.
+</p>
+</div>
+
+</div>
+
+</section>
 
 <!-- FOOTER -->
 
 <footer>
 
+<h3>
+Contact Africannese Group
+</h3>
+
+<p>
+
 Email:
-
-<a href="mailto:info@africannese.co.za">
-
+<span class="contact-highlight">
 info@africannese.co.za
-
-</a>
-
-&nbsp;&nbsp;|&nbsp;&nbsp;
-
-Phone:
-
-<a href="tel:+27712447847">
-
-+27 71 244 7847
-
-</a>
+</span>
 
 <br><br>
 
-© 2026 Africannese Group
+Phone:
+<span class="contact-highlight">
++27 71 244 7847
+</span>
+
+</p>
 
 </footer>
 
-
 </body>
-
 </html>
