@@ -1,215 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>About Africannese Group</title>
 
 <style>
 
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#000;
-color:white;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#000;
+    color:white;
 }
 
-/* PREMIUM GOLD HEADER */
+/* HERO SECTION */
 
 .hero{
-background:linear-gradient(135deg,#FFD700,#caa400);
-color:black;
-text-align:center;
-padding:100px 20px 70px 20px;
+    background:linear-gradient(135deg,#FFD700,#cfae00);
+    color:black;
+    text-align:center;
+    padding:90px 20px 70px;
+}
+
+.hero img{
+    width:120px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-font-size:44px;
-margin-bottom:10px;
+    font-size:68px;
+    line-height:1.1;
+    margin:0 0 25px;
+    font-weight:900;
 }
 
 .hero p{
-font-size:18px;
+    font-size:24px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.5;
 }
 
-/* CLEAN NAVIGATION */
+/* PREMIUM NAVIGATION */
 
-nav{
-background:#111;
-display:flex;
-justify-content:center;
-gap:40px;
-padding:20px;
+.premium-nav{
+    background:#0d0d0d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+    padding:22px 15px;
+    border-top:2px solid #FFD700;
+    border-bottom:1px solid #222;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
-transition:.3s;
+.premium-nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    font-size:17px;
+    padding:16px 28px;
+    border-radius:50px;
+    background:#161616;
+    border:1px solid #2c2c2c;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
 }
 
-nav a:hover{
-color:#FFD700;
+.premium-nav a:hover{
+    background:#FFD700;
+    color:black;
+    transform:translateY(-2px);
+    box-shadow:0 0 20px rgba(255,215,0,0.5);
 }
 
-/* CONTENT AREA */
-
-.content{
-max-width:900px;
-margin:auto;
-padding:60px 25px;
-line-height:1.8;
-font-size:18px;
+.premium-nav .active{
+    background:#FFD700;
+    color:black;
+    box-shadow:0 0 25px rgba(255,215,0,0.7);
 }
 
-.content h2{
-color:#FFD700;
-margin-top:40px;
+/* CONTENT */
+
+.section{
+    padding:80px 25px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2{
+    color:#FFD700;
+    font-size:54px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+.section p{
+    font-size:23px;
+    line-height:1.9;
+    color:#ddd;
+    text-align:center;
+}
+
+/* VALUES */
+
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.value-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.value-card h3{
+    color:#FFD700;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.value-card p{
+    font-size:18px;
+    color:#ccc;
+    line-height:1.7;
+}
+
+/* STATS */
+
+.stats{
+    background:#111;
+    padding:70px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#FFD700;
+    font-size:60px;
+    margin:0;
+}
+
+.stat p{
+    font-size:20px;
+    color:#ddd;
 }
 
 /* FOOTER */
 
 footer{
-background:#111;
-padding:45px 20px;
-text-align:center;
-font-size:17px;
+    background:#0b0b0b;
+    padding:50px 20px;
+    text-align:center;
+    border-top:2px solid #FFD700;
 }
 
-footer a{
-color:#FFD700;
-text-decoration:none;
+footer p{
+    color:#bbb;
+    font-size:18px;
+    line-height:1.8;
+}
+
+footer span{
+    color:#FFD700;
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section h2{
+    font-size:38px;
+}
+
+.section p{
+    font-size:18px;
+}
+
+.premium-nav{
+    gap:12px;
+}
+
+.premium-nav a{
+    padding:14px 20px;
+    font-size:15px;
+}
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- HEADER -->
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>About Africannese Group</h1>
+<img src="logo.png" alt="Africannese Logo">
 
-<p>Engineering • Construction • Corporate Wear • Branding Solutions</p>
+<h1>About<br>Africannese Group</h1>
+
+<p>
+Engineering • Construction • Corporate Wear • Branding Solutions
+</p>
 
 </section>
 
-
 <!-- NAVIGATION -->
 
-<nav>
+<nav class="premium-nav">
 
 <a href="index.html">Home</a>
 
-<a href="about.html">About Company</a>
+<a href="steelworks.html">Steelworks</a>
+
+<a href="corporatewear.html">Corporate Wear</a>
+
+<a href="about.html" class="active">About Company</a>
 
 </nav>
 
+<!-- ABOUT -->
 
-<!-- COMPANY PROFILE -->
-
-<section class="content">
-
+<section class="section">
 
 <h2>Who We Are</h2>
 
 <p>
-
-Africannese Group is a South African multi-division company delivering services in structural steelworks, construction support services, corporate wear supply, PPE distribution, and branding solutions.
-
-Our operations are structured into two specialised divisions:
-
-• Africannese Steelworks & Construction  
-• Africannese Corporate Wear & Branding
-
-</p>
-
-
-<h2>Industry Experience</h2>
-
-<p>
-
-With over 15 years of experience in steel fabrication, welding, and steel erection, Africannese provides dependable workmanship aligned with construction industry requirements across South Africa.
-
-We support contractors, municipalities, developers, institutions, and private sector clients.
-
-</p>
-
-
-<h2>Our Services</h2>
-
-<p>
-
-Steelworks Division:
-
-• Structural steel fabrication  
-• General welding  
-• Steel erection  
-• Industrial installations
-
+Africannese Group is a South African multi-division company delivering professional engineering, steel fabrication, construction, corporate wear, PPE supply and branding solutions.
 <br><br>
-
-Corporate Wear Division:
-
-• Corporate uniforms  
-• PPE supply  
-• Embroidery services  
-• Printing & branding solutions
-
+We focus on quality workmanship, reliable service delivery and premium business presentation standards that help our clients compete professionally in both local and international markets.
 </p>
 
+<div class="values">
 
-<h2>Our Commitment</h2>
-
+<div class="value-card">
+<h3>Vision</h3>
 <p>
-
-Africannese Group is committed to delivering reliable service, professional workmanship, and quality solutions aligned with client expectations across both construction and corporate supply environments.
-
+To build a globally competitive African brand recognized for engineering excellence, innovation and professionalism.
 </p>
+</div>
 
+<div class="value-card">
+<h3>Mission</h3>
+<p>
+To provide reliable industrial, construction and branding solutions while maintaining high quality standards and customer satisfaction.
+</p>
+</div>
+
+<div class="value-card">
+<h3>Core Values</h3>
+<p>
+Integrity • Excellence • Innovation • Professionalism • Reliability • Customer Commitment
+</p>
+</div>
+
+</div>
 
 </section>
 
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat">
+<h3>15+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h3>100+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Client Support</p>
+</div>
+
+<div class="stat">
+<h3>SA</h3>
+<p>Nationwide Service</p>
+</div>
+
+</section>
 
 <!-- FOOTER -->
 
 <footer>
 
-Email:
-
-<a href="mailto:info@africannese.co.za">
-
-info@africannese.co.za
-
-</a>
-
-&nbsp;&nbsp;|&nbsp;&nbsp;
-
-Phone:
-
-<a href="tel:+27712447847">
-
-+27 71 244 7847
-
-</a>
-
+<p>
+<span>Email:</span> info@africannese.co.za
 <br><br>
-
-© 2026 Africannese Group
+<span>Phone:</span> +27 71 244 7847
+<br><br>
+© 2026 Africannese Group. All Rights Reserved.
+</p>
 
 </footer>
 
-
 </body>
-
 </html>
