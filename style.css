@@ -1,382 +1,217 @@
-/* ============================= */
-/* AFRICANNESE GROUP MASTER CSS */
-/* FINAL STABLE VERSION */
-/* ============================= */
+/* ==========================================
+   AFRICANNESE GROUP - MAIN STYLESHEET
+   Gold • Black • White Theme
+========================================== */
 
-
-/* RESET */
-
-* {
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-
-
-/* BODY */
-
-body {
-
-font-family: Arial, Helvetica, sans-serif;
-background: #f4f6f9;
-color: #222;
-
+html{
+    scroll-behavior:smooth;
 }
 
-
-
-/* HEADER */
-
-header {
-
-background: #0c2340;
-color: white;
-
-padding: 18px 25px;
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-flex-wrap: wrap;
-
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#ffffff;
+    line-height:1.7;
 }
 
-
-
-/* HEADER TITLE */
-
-header h1 {
-
-font-size: 22px;
-letter-spacing: 1px;
-
+header{
+    background:linear-gradient(135deg,#d4af37,#8c6b00);
+    color:#000;
+    text-align:center;
+    padding:80px 20px;
 }
 
-
-
-/* NAVIGATION */
-
-nav {
-
-display: flex;
-flex-wrap: wrap;
-gap: 14px;
-
+header img{
+    width:180px;
+    margin-bottom:20px;
 }
 
-
-
-nav a {
-
-color: white;
-text-decoration: none;
-font-weight: bold;
-font-size: 14px;
-
+header h1{
+    font-size:3rem;
 }
 
-
-nav a:hover {
-
-opacity: 0.75;
-
+header p{
+    font-size:1.2rem;
+    margin-top:10px;
 }
 
-
-
-/* HERO SECTION */
-
-.hero {
-
-background: #0c2340;
-color: white;
-
-text-align: center;
-
-padding: 60px 20px;
-
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    background:#111;
+    padding:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
 
-
-
-/* LOGO SIZE FIX */
-
-.division-logo {
-
-width: 180px;
-max-width: 70%;
-height: auto;
-
-display: block;
-margin: auto;
-
-margin-bottom: 20px;
-
+nav a{
+    color:#fff;
+    text-decoration:none;
+    background:#222;
+    padding:12px 22px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
 }
 
-
-
-/* HERO TEXT */
-
-.hero h2 {
-
-color: #ffcc00;
-
-font-size: 24px;
-
-margin-top: 10px;
-
+nav a:hover,
+nav a.active{
+    background:#d4af37;
+    color:#000;
 }
 
-
-
-/* CTA BUTTON */
-
-.cta {
-
-display: inline-block;
-
-margin-top: 20px;
-
-background: #25D366;
-
-padding: 14px 30px;
-
-color: white;
-
-text-decoration: none;
-
-border-radius: 40px;
-
-font-weight: bold;
-
-transition: 0.2s ease;
-
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
 }
 
-
-.cta:hover {
-
-background: #1ebe5d;
-
+.section-title{
+    text-align:center;
+    color:#d4af37;
+    font-size:2.5rem;
+    margin-bottom:40px;
 }
 
-
-
-/* CONTENT SECTIONS */
-
-section {
-
-max-width: 900px;
-
-margin: auto;
-
-padding: 45px 20px;
-
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
-
-
-section h2 {
-
-color: #0c2340;
-
-margin-bottom: 14px;
-
-font-size: 22px;
-
+.card{
+    background:#171717;
+    border:1px solid #333;
+    border-radius:18px;
+    padding:25px;
+    transition:.35s;
 }
 
-
-
-section p {
-
-line-height: 1.7;
-
-margin-bottom: 12px;
-
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 15px 35px rgba(212,175,55,.2);
 }
 
-
-
-section ul {
-
-padding-left: 18px;
-
-line-height: 1.8;
-
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
 }
 
-
-
-/* FOOTER */
-
-footer {
-
-background: #0c2340;
-
-color: white;
-
-text-align: center;
-
-padding: 20px;
-
-font-weight: bold;
-
-margin-top: 40px;
-
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#000;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-
-
-/* FLOATING WHATSAPP BUTTON */
-
-.whatsapp {
-
-position: fixed;
-
-right: 18px;
-
-bottom: 18px;
-
-background: #25D366;
-
-color: white;
-
-padding: 14px 22px;
-
-border-radius: 40px;
-
-text-decoration: none;
-
-font-weight: bold;
-
-box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
-
+.btn:hover{
+    background:#f5d65f;
 }
 
-
-.whatsapp:hover {
-
-background: #1ebe5d;
-
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
 }
 
-
-
-/* HOMEPAGE DIVISION CARDS */
-
-.division-container {
-
-max-width: 1100px;
-
-margin: auto;
-
-padding: 50px 20px;
-
-display: grid;
-
-grid-template-columns: 1fr 1fr;
-
-gap: 30px;
-
+.stat{
+    background:#171717;
+    padding:25px;
+    border-radius:16px;
+    text-align:center;
 }
 
-
-
-.division-card {
-
-background: white;
-
-padding: 35px;
-
-border-radius: 14px;
-
-box-shadow: 0px 5px 22px rgba(0,0,0,0.08);
-
+.stat h3{
+    font-size:42px;
+    color:#d4af37;
 }
 
-
-
-/* DIVISION BUTTON */
-
-.division-button {
-
-display: inline-block;
-
-margin-top: 18px;
-
-padding: 12px 26px;
-
-background: #0c2340;
-
-color: white;
-
-text-decoration: none;
-
-border-radius: 30px;
-
-font-weight: bold;
-
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #555;
+    background:#222;
+    color:#fff;
 }
 
-
-.division-button:hover {
-
-background: #06172a;
-
+button{
+    background:#d4af37;
+    color:#000;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-
-
-/* MOBILE OPTIMISATION */
-
-@media (max-width: 768px)
-
-{
-
-header {
-
-flex-direction: column;
-
-align-items: center;
-
-text-align: center;
-
+button:hover{
+    background:#f5d65f;
 }
 
-
-nav {
-
-justify-content: center;
-
-margin-top: 8px;
-
+footer{
+    background:#080808;
+    color:#bbb;
+    text-align:center;
+    padding:40px 20px;
 }
 
-
-.hero {
-
-padding: 50px 15px;
-
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:34px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
 }
 
+@media(max-width:768px){
 
-section {
-
-padding: 40px 16px;
-
+header h1{
+    font-size:2.2rem;
 }
 
+.section-title{
+    font-size:2rem;
+}
 
-.division-container {
+nav{
+    gap:8px;
+}
 
-grid-template-columns: 1fr;
+nav a{
+    padding:10px 16px;
+    font-size:.9rem;
+}
 
+.grid{
+    grid-template-columns:1fr;
 }
 
 }
