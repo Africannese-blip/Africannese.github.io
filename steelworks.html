@@ -1,502 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Africannese Steelworks Division</title>
-
+<title>Africannese Steelworks & Construction</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:#000;
-color:white;
-overflow-x:hidden;
-}
-
-/* HERO */
-
-.hero{
-background:linear-gradient(135deg,#ffd700,#d4af37);
-padding:100px 20px 90px;
-text-align:center;
-}
-
-.logo{
-width:120px;
-margin-bottom:25px;
-}
-
-.hero h1{
-font-size:60px;
-font-weight:900;
-line-height:1.1;
-color:#000;
-margin-bottom:25px;
-}
-
-.hero p{
-font-size:25px;
-line-height:1.6;
-color:#111;
-}
-
-/* NAVIGATION */
-
-nav{
-background:#0d0d0d;
-padding:22px 15px;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:15px;
-flex-wrap:wrap;
-border-top:2px solid #ffd700;
-border-bottom:1px solid #1f1f1f;
-box-shadow:0 8px 30px rgba(0,0,0,0.5);
-position:sticky;
-top:0;
-z-index:999;
-}
-
-nav a{
-text-decoration:none;
-padding:15px 24px;
-border-radius:40px;
-font-size:16px;
-font-weight:bold;
-background:#161616;
-color:white;
-border:1px solid #2a2a2a;
-transition:0.3s;
-}
-
-nav a:hover{
-background:#ffd700;
-color:black;
-transform:translateY(-2px);
-}
-
-.active{
-background:#ffd700;
-color:black;
-box-shadow:0 0 18px rgba(255,215,0,0.6);
-}
-
-/* SERVICES */
-
-.services{
-padding:80px 25px;
-text-align:center;
-}
-
-.services h2{
-font-size:56px;
-margin-bottom:45px;
-color:#ffd700;
-}
-
-.service-box{
-background:#111;
-padding:45px 30px;
-border-radius:28px;
-border:1px solid #222;
-box-shadow:0 12px 35px rgba(0,0,0,0.5);
-max-width:900px;
-margin:auto;
-}
-
-.service-box p{
-font-size:24px;
-line-height:2;
-color:#f1f1f1;
-}
-
-/* CAPABILITIES */
-
-.capabilities{
-padding:80px 25px;
-background:#050505;
-}
-
-.capabilities h2{
-font-size:54px;
-margin-bottom:50px;
-text-align:center;
-color:#ffd700;
-}
-
-.cap-grid{
-display:grid;
-grid-template-columns:1fr;
-gap:25px;
-}
-
-.cap-card{
-background:#111;
-padding:40px 30px;
-border-radius:24px;
-border:1px solid #202020;
-}
-
-.cap-card h3{
-font-size:30px;
-margin-bottom:20px;
-color:#ffd700;
-}
-
-.cap-card p{
-font-size:19px;
-line-height:1.8;
-color:#ddd;
-}
-
-/* PROJECTS */
-
-.projects{
-padding:80px 25px;
-text-align:center;
-}
-
-.projects h2{
-font-size:54px;
-margin-bottom:50px;
-color:#ffd700;
-}
-
-.project-box{
-background:#111;
-padding:35px;
-border-radius:22px;
-margin-bottom:25px;
-border-left:5px solid #ffd700;
-}
-
-.project-box h3{
-font-size:28px;
-margin-bottom:18px;
-color:#ffd700;
-}
-
-.project-box p{
-font-size:19px;
-line-height:1.8;
-color:#eee;
-}
-
-/* TESTIMONIALS */
-
-.testimonials{
-padding:80px 25px;
-background:#050505;
-text-align:center;
-}
-
-.testimonials h2{
-font-size:54px;
-margin-bottom:45px;
-color:#ffd700;
-}
-
-.testimonial{
-background:#111;
-padding:35px;
-border-radius:22px;
-margin-bottom:25px;
-border-left:5px solid #ffd700;
-}
-
-.testimonial p{
-font-size:19px;
-line-height:1.8;
-color:#eee;
-}
-
-.testimonial h4{
-margin-top:20px;
-font-size:20px;
-color:#ffd700;
-}
-
-/* CONTACT */
-
-.contact{
-background:#111;
-padding:80px 25px;
-text-align:center;
-border-top:2px solid #ffd700;
-}
-
-.contact h2{
-font-size:50px;
-margin-bottom:35px;
-color:#ffd700;
-}
-
-.contact p{
-font-size:24px;
-line-height:2;
-color:#f1f1f1;
-}
-
-.highlight{
-color:#ffd700;
-font-weight:bold;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:48px;
-}
-
-.hero p{
-font-size:22px;
-}
-
-.services h2,
-.capabilities h2,
-.projects h2,
-.testimonials h2,
-.contact h2{
-font-size:42px;
-}
-
-.service-box p{
-font-size:20px;
-}
-
-nav a{
-font-size:15px;
-padding:14px 18px;
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0b0b0b;color:#fff;line-height:1.6}
+header{background:linear-gradient(135deg,#ffd700,#8b6b00);color:#000;padding:70px 20px;text-align:center}
+header img{max-width:170px;width:100%;margin-bottom:18px}
+nav{background:#111;display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:16px;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;background:#222;padding:12px 22px;border-radius:30px;font-weight:bold}
+nav a.active,nav a:hover{background:#ffd700;color:#000}
+.container{max-width:1200px;margin:auto;padding:50px 20px}
+h2{color:#ffd700;text-align:center;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#171717;border:1px solid #333;border-radius:18px;padding:24px}
+.card h3{color:#ffd700;margin-bottom:10px}
+.list li{margin-left:18px;margin-bottom:8px}
+.cta{text-align:center;margin:40px 0}
+.btn{display:inline-block;background:#ffd700;color:#000;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
+footer{background:#111;text-align:center;padding:35px;margin-top:40px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:34px}
 </style>
-
 </head>
-
 <body>
 
-<!-- HERO -->
-
-<section class="hero">
-
-<img src="logo.png" alt="Africannese Logo" class="logo">
-
-<h1>
-Africannese<br>
-Steelworks Division
-</h1>
-
-<p>
-Structural Steel Fabrication • Welding •<br>
-Industrial Installations
-</p>
-
-</section>
-
-<!-- NAVIGATION -->
+<header>
+<img src="logo.png" alt="Africannese Steelworks Logo">
+<h1>Africannese Steelworks & Construction</h1>
+<p><strong>Changing Strong Ideas into Strong Structures</strong></p>
+</header>
 
 <nav>
-
-<a href="index.html">
-Home
-</a>
-
-<a href="steelworks.html" class="active">
-Steelworks
-</a>
-
-<a href="corporatewear.html">
-Corporate Wear
-</a>
-
-<a href="about.html">
-About Company
-</a>
-
+<a href="index.html">Home</a>
+<a class="active" href="steelworks.html">Steelworks</a>
+<a href="corporatewear.html">Corporate Wear</a>
+<a href="about.html">About</a>
 </nav>
 
-<!-- SERVICES -->
+<div class="container">
 
-<section class="services">
-
-<h2>
-Steelworks Services
-</h2>
-
-<div class="service-box">
-
-<p>
-Structural Steel Fabrication<br>
-General Welding<br>
-Steel Erection<br>
-Balustrades & Gates<br>
-Carports & Canopies<br>
-Staircases & Platforms<br>
-Industrial Installations
-</p>
-
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Steel Fabrication</h3><ul class="list"><li>Structural steel</li><li>General welding</li><li>Steel erection</li><li>Roof structures</li></ul></div>
+<div class="card"><h3>Construction</h3><ul class="list"><li>Building construction</li><li>Renovations</li><li>Painting</li><li>Plumbing</li><li>Electrical installations</li></ul></div>
+<div class="card"><h3>Custom Steel</h3><ul class="list"><li>Carports</li><li>Security gates</li><li>Burglar proofing</li><li>Balustrades</li><li>Structural repairs</li></ul></div>
 </div>
 
-</section>
-
-<!-- CAPABILITIES -->
-
-<section class="capabilities">
-
-<h2>
-Our Capabilities
-</h2>
-
-<div class="cap-grid">
-
-<div class="cap-card">
-
-<h3>
-Steel Fabrication
-</h3>
-
-<p>
-Precision fabrication of structural steel components for industrial, commercial and residential projects.
-</p>
-
+<h2>Capabilities</h2>
+<div class="grid">
+<div class="card"><h3>Workshop</h3><p>Fabrication of structural steel, custom steel products and repair work.</p></div>
+<div class="card"><h3>Site Installation</h3><p>Professional installation for residential, commercial and industrial projects.</p></div>
+<div class="card"><h3>Safety</h3><p>Committed to quality workmanship, safe working practices and on-time delivery.</p></div>
 </div>
 
-<div class="cap-card">
-
-<h3>
-On-Site Installations
-</h3>
-
-<p>
-Professional steel erection and on-site installation services delivered with safety and quality standards.
-</p>
-
+<h2>Completed Projects</h2>
+<div class="grid">
+<div class="card"><h3>Church Roof Structure</h3><p>Steel roof structure completed in Mamelodi.</p></div>
+<div class="card"><h3>Security Gates & Carports</h3><p>Manufacture and installation in Pretoria East.</p></div>
+<div class="card"><h3>Structural Repairs</h3><p>Repair work completed for a construction contractor.</p></div>
 </div>
 
-<div class="cap-card">
+<h2>Current Equipment</h2>
+<div class="grid">
+<div class="card"><h3>Existing Assets</h3><ul class="list"><li>Welding Machine</li><li>Angle Grinder</li></ul></div>
+<div class="card"><h3>Expansion Plan</h3><ul class="list"><li>Plasma Cutter</li><li>Generator</li><li>Compressor</li><li>Drill Press</li></ul></div>
+</div>
 
-<h3>
-Custom Steel Projects
-</h3>
-
-<p>
-Custom-designed gates, platforms, staircases, canopies and industrial steel solutions tailored to client requirements.
-</p>
-
+<div class="cta">
+<a class="btn" href="https://wa.me/27712447847">Request a Quotation</a>
 </div>
 
 </div>
 
-</section>
+<footer>
+<p><strong>Email:</strong> info@africannese.co.za</p>
+<p><strong>Phone:</strong> +27 71 244 7847</p>
+<p><strong>Address:</strong> 38850 Mshona Avenue, Mamelodi</p>
+<p>© 2026 Africannese Steelworks & Construction</p>
+</footer>
 
-<!-- PROJECTS -->
-
-<section class="projects">
-
-<h2>
-Project References
-</h2>
-
-<div class="project-box">
-
-<h3>
-Industrial Steel Installations
-</h3>
-
-<p>
-Successfully completed welding, fabrication and installation projects for industrial and construction environments.
-</p>
-
-</div>
-
-<div class="project-box">
-
-<h3>
-Residential & Commercial Work
-</h3>
-
-<p>
-Custom steel gates, staircases, balustrades and canopy structures manufactured to professional standards.
-</p>
-
-</div>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="testimonials">
-
-<h2>
-Client Testimonials
-</h2>
-
-<div class="testimonial">
-
-<p>
-“Africannese delivered exceptional steel fabrication work with professionalism and quality workmanship.”
-</p>
-
-<h4>
-— Construction Client
-</h4>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-“The welding quality and finishing were excellent. Reliable team and professional service.”
-</p>
-
-<h4>
-— Industrial Client
-</h4>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-<h2>
-Contact Africannese Group
-</h2>
-
-<p>
-
-Email:
-<span class="highlight">
-info@africannese.co.za
-</span>
-
-<br><br>
-
-Phone:
-<span class="highlight">
-+27 71 244 7847
-</span>
-
-</p>
-
-</section>
+<a class="whatsapp" href="https://wa.me/27712447847">💬</a>
 
 </body>
 </html>
