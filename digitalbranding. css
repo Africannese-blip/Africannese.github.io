@@ -1,0 +1,15 @@
+
+/* Africannese Digital Branding */
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#5c4360;line-height:1.6}
+header{background:linear-gradient(135deg,#d8a4c8,#c987b6);color:#fff;padding:80px 20px;text-align:center}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;background:#fff;padding:15px;border-bottom:2px solid #d8a4c8}
+nav a{padding:12px 22px;border-radius:30px;text-decoration:none;background:#f9f0f5;color:#a45d91;font-weight:bold}
+nav a:hover,nav a.active{background:#d8a4c8;color:#fff}
+.container{max-width:1200px;margin:auto;padding:60px 20px}
+.section-title{color:#c987b6;text-align:center;font-size:2.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#fff;border:1px solid #edd6e5;border-radius:18px;padding:25px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.card h3{color:#c987b6}
+.btn,button{background:#c987b6;color:#fff;padding:14px 28px;border:none;border-radius:30px;text-decoration:none;font-weight:bold}
+footer{background:#f8edf4;color:#666;text-align:center;padding:30px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:64px;height:64px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none}
